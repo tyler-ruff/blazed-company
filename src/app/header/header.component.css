@@ -1,3 +1,11 @@
-.is-active{
-    text-decoration:underline;
+
+.menu-mobile{
+    display:none;
+    padding-top:20px;
+}
+
+@media only screen and (max-width: 1023px){
+    .menu-mobile{
+        display:block;
+    }
 }

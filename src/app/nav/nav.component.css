@@ -1,0 +1,15 @@
+.is-active{
+    text-decoration:underline;
+}
+
+@media only screen and (max-width: 1023px){
+    ul li{
+        display:block;
+    }
+    ul li a{
+        display:block;
+        width:100%;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
