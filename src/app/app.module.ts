@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LazyLoadDirective } from './lazyload.directive';
 import { NavComponent } from './nav/nav.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavComponent } from './nav/nav.component';
     LazyLoadDirective,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
