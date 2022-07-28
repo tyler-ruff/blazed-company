@@ -7,9 +7,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 import { LazyLoadDirective } from './lazyload.directive';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
+import { DivisionsComponent } from './divisions/divisions.component';
+import { ContactComponent } from './contact/contact.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    AboutComponent
+    HomeComponent,
+    AboutComponent,
+    DivisionsComponent,
+    ContactComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,

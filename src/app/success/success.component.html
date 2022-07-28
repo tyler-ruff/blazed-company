@@ -1,0 +1,16 @@
+<ng-container *ngIf="showBox">
+    <div class="flex shadow-md gap-6 rounded-lg overflow-hidden divide-x max-w-2xl dark:bg-gray-900 dark:text-gray-100 divide-gray-700">
+        <div (click)="closeMessage()" class="group cursor-pointer absolute bg-green-300 mt-20 flex flex-1 flex-col p-4 border-l-8 shadow-md rounded-lg dark:border-violet-400">
+            <span class="text-2xl">
+                Success!
+            </span>
+            <span class="text-xs dark:text-gray-400">
+                Your mesage was successfully sent. A company representative will be in contact shortly.
+            </span>
+            <button class="px-4 pt-3 flex items-center text-xs group-hover:underline uppercase tracking-wide dark:text-gray-400 dark:border-gray-700">
+                Dismiss
+            </button>
+        </div>
+    </div>
+</ng-container>
+<app-home></app-home>

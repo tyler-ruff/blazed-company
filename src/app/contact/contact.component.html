@@ -1,0 +1,68 @@
+<article class="p-6 dark:bg-gray-800 dark:text-gray-50 pt-10">
+    <div class="pt-20 md:max-w-md relative mx-auto">
+        <h1 class="text-center text-3xl font-bold py-5">
+            Contact Us
+        </h1>
+        <form method="post" action="https://api.staticforms.xyz/submit" #contactForm>
+            <fieldset class="grid md:grid-cols-2 py-2">
+                <div>
+                    <label for="field-name">
+                        Name:
+                    </label>
+                    <input required placeholder="John Smith" name="name" id="field-name" type="text" class="p-3 border" title="Please enter your first and last name.">
+                </div>
+                <div>
+                    <label for="field-email">
+                        Email:
+                    </label>
+                    <input required placeholder="name@example.com" name="email" id="field-email" type="email" class="p-3 border" title="Please enter your email address.">
+                </div>
+            </fieldset>
+            <fieldset class="py-2">
+                <div>
+                    <label for="field-company">
+                        Company (Optional):
+                    </label>
+                    <input required placeholder="Blazed Labs LLC" name="$company" id="field-company" type="text" class="p-3 border w-full" title="Please enter your company name, if you are conducting business.">
+                </div>
+            </fieldset>
+            <fieldset class="py-2 pr-4">
+                <div>
+                    <select required name="$nature" class="p-3 border w-full">
+                        <option>What is the nature of this inquiry?</option>
+                        <option value="general">General</option>
+                        <option value="feedback">Customer Feedback</option>
+                        <option value="legal">Legal</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="hr">Human Resources (HR)</option>
+                        <option value="employment">Employment</option>
+                        <option value="sales">Sales Inquiry</option>
+                        <option value="support">Support Request</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset class="py-2">
+                <div>
+                    <label for="field-message">
+                        Message:
+                    </label>
+                    <textarea required id="field-message" name="message" class="border p-3 w-full" title="Please enter your message."></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="hidden">
+                    <input type="text" name="honeypot" style="display:none">
+                    <input type="hidden" name="accessKey" value="ae7d37b2-fcad-42f6-a26f-d9d805abfb04">
+                    <input type="hidden" name="subject" value="Contact us from - blazed.company" />
+                    <input type="hidden" name="replyTo" value="@">
+                    <input type="hidden" name="redirectTo" value="https://blazed.company/success">
+                </div>
+            </fieldset>
+            <fieldset class="py-2">
+                <div>
+                    <input type="submit" value="Send Message" class="p-3 border bg-gray-700 hover:bg-gray-800 text-white rounded-md" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</article>
