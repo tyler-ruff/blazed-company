@@ -2,6 +2,19 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "storybook": {
+    "builder": "@storybook/angular:start-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build",
+      "port": 6006
+    }
+  },
+  "build-storybook": {
+    "builder": "@storybook/angular:build-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build"
+    }
+  },
   "projects": {
     "fire": {
       "projectType": "application",
@@ -102,6 +115,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "fire:build:production",
+            "firebaseProject": "blazed-company-6efe6",
+            "firebaseHostingSite": "blazed-company-6efe6"
           }
         }
       }

@@ -6,7 +6,6 @@ import { DirectoryComponent } from './directory/directory.component';
 import { DivisionsComponent } from './divisions/divisions.component';
 import { HomeComponent } from './home/home.component';
 import { SuccessComponent } from './success/success.component';
-import { TeamComponent } from './team/team.component';
 import { UnknownComponent } from './unknown/unknown.component';
 
 const routes: Routes = [
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'directory', component: DirectoryComponent },
   { path: 'divisions', component: DivisionsComponent },
-  { path: 'team', component: TeamComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'success', component: SuccessComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
