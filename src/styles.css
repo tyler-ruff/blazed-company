@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Hind+Vadodara&display=swap');
+
 /* Blazed Labs Styles */
 
 html, body{
@@ -69,11 +71,24 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 ::selection{
-    background: #000;
-    color: #fff;
+    background: #a60013;
+    background: rgba(166, 0, 19, 0.8);
+    color: #ffffff;
+    color: rgba(255,255,255,0.9);
 }
 
 ::-moz-selection{
-    background: #000;
-    color: #fff;
+    background: #a60013;
+    background: rgba(166, 0, 19, 0.8);
+    color: #ffffff;
+    color: rgba(255,255,255,0.9);
+}
+
+body {
+    font-family: 'Hind Vadodara', sans-serif;
+    letter-spacing: 0.7px;
+}
+
+h1, h3{
+    font-family: 'DM Serif Text', serif;
 }

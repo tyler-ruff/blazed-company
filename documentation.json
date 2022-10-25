@@ -459,7 +459,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"bg-gray-50\">\n    <div class=\"container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2\">\n        <div class=\"flex flex-col items-center max-w-lg mx-auto text-center\">\n            <h2 class=\"text-3xl font-semibold tracking-tight text-gray-800\">\n                Web development\n            </h2>\n\n            <p class=\"mt-3 text-gray-500\">\n                We make websites in Angular, Svelte, React, any other JS (or non-js) library, or static HTML.\n                We can integrate with your existing stack, or we can suggest solutions.\n                We offer free (unbilled) consultation, wherein a Blazed Engineer will work with you to find the best solution for your company.\n            </p>\n            \n            <a href=\"https://blazed.contact/website\" target=\"_blank\" class=\"inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white bg-red-500 rounded-lg sm:w-auto hover:bg-red-400 focus:ring focus:ring-blue-300 focus:ring-opacity-80\">\n                Contact Us\n            </a>\n        </div>\n\n        <div class=\"flex flex-col items-center max-w-lg mx-auto text-center\">\n            <h2 class=\"text-3xl font-semibold tracking-tight text-gray-800\">\n                App development\n            </h2>\n\n            <p class=\"mt-3 text-gray-500\">\n                We can make desktop and mobile apps. Desktop can be Macintosh, Windows, and/or Linux. Mobile can be IOS, Android, and/or Windows Phone. Apps specifically refer to installed applications, and usually are more costly and time consuming to produce.\n            </p>\n            \n            <a href=\"https://blazed.contact/app\" target=\"_blank\" class=\"inline-flex items-center justify-center w-full px-5 py-2 mt-6 border text-gray-800 bg-white rounded-lg sm:w-auto hover:bg-gray-200 focus:ring focus:ring-blue-300 focus:ring-opacity-80\">\n                Contact Us\n            </a>\n        </div>\n    </div>\n</div>"
+            "templateData": "<div class=\"bg-gray-50\">\n    <div class=\"container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2\">\n        <div class=\"flex flex-col items-center max-w-lg mx-auto text-center\">\n            <h3 class=\"text-3xl font-semibold tracking-tight text-gray-800\">\n                Web development\n            </h3>\n            <p class=\"mt-3 text-gray-500\">\n                We make websites in Angular, Svelte, React, any other JS (or non-js) library, or static HTML.\n                We can integrate with your existing stack, or we can suggest solutions.\n                We offer free (unbilled) consultation, wherein a Blazed Engineer will work with you to find the best solution for your company.\n            </p>\n            <a href=\"https://blazed.contact/website\" target=\"_blank\" class=\"inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white bg-red-500 rounded-lg sm:w-auto hover:bg-red-400 focus:ring focus:ring-blue-300 focus:ring-opacity-80\">\n                Contact Us\n            </a>\n        </div>\n        <div class=\"flex flex-col items-center max-w-lg mx-auto text-center\">\n            <h3 class=\"text-3xl font-semibold tracking-tight text-gray-800\">\n                App development\n            </h3>\n            <p class=\"mt-3 text-gray-500\">\n                We can make desktop and mobile apps. Desktop can be Macintosh, Windows, and/or Linux. Mobile can be IOS, Android, and/or Windows Phone. Apps specifically refer to installed applications, and usually are more costly and time consuming to produce.\n            </p>\n            <a href=\"https://blazed.contact/app\" target=\"_blank\" class=\"inline-flex items-center justify-center w-full px-5 py-2 mt-6 border text-gray-800 bg-white rounded-lg sm:w-auto hover:bg-gray-200 focus:ring focus:ring-blue-300 focus:ring-opacity-80\">\n                Contact Us\n            </a>\n        </div>\n    </div>\n</div>"
         },
         {
             "name": "DirectoryComponent",
@@ -673,7 +673,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"bg-white py-10\">\n    <div class=\"container px-6 py-12 mx-auto\">\n        <h2 class=\"text-center text-3xl pb-20\">\n            Why do people <i class=\"text-red-600\">Love</i> Blazed Labs?\n        </h2>\n        <div class=\"grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3\">\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <path d=\"M29.6931 14.2283L22.7556 6.87823C22.3292 6.426 21.6175 6.40538 21.1652 6.83212C20.7137 7.25851 20.6927 7.9706 21.1195 8.42248L27.3284 15L21.1195 21.5783C20.6927 22.0302 20.7137 22.7419 21.1652 23.1687C21.3827 23.3738 21.6606 23.4754 21.9374 23.4754C22.2363 23.4754 22.5348 23.3569 22.7557 23.1233L29.6932 15.7729C30.1022 15.339 30.1023 14.6618 29.6931 14.2283Z\" fill=\"#2D3748\"/><path d=\"M8.88087 21.578L2.67236 15L8.88087 8.42215C9.30726 7.97028 9.28664 7.25812 8.83476 6.83179C8.38323 6.4054 7.67073 6.42603 7.2444 6.87791L0.306858 14.2279C-0.102245 14.6614 -0.102245 15.3391 0.306858 15.7726L7.24475 23.123C7.466 23.3574 7.76413 23.4755 8.06302 23.4755C8.33976 23.4755 8.61767 23.3735 8.83476 23.1684C9.28705 22.742 9.30726 22.0299 8.88087 21.578Z\" fill=\"#2D3748\"/><path d=\"M16.8201 3.08774C16.2062 2.99476 15.6317 3.41622 15.5379 4.03011L12.2379 25.6302C12.1441 26.2445 12.566 26.8186 13.1803 26.9124C13.238 26.921 13.295 26.9252 13.3516 26.9252C13.898 26.9252 14.3773 26.5266 14.4624 25.97L17.7624 4.3699C17.8562 3.7556 17.4343 3.1815 16.8201 3.08774Z\" fill=\"#4299E1\"/>\n                </svg>\n\n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Open Source Software\n                </h1>\n\n                <p class=\"mt-2 text-gray-500\">\n                    We create open source software and support open source projects. We are working to make software development more transparent and more reliable.\n                </p>\n            </div>\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <path d=\"M27.3633 7.08984H26.4844V6.21094C26.4844 4.75705 25.3015 3.57422 23.8477 3.57422H4.39453C2.94064 3.57422 1.75781 4.75705 1.75781 6.21094V21.1523H0.878906C0.393516 21.1523 0 21.5459 0 22.0312V23.7891C0 25.2429 1.18283 26.4258 2.63672 26.4258H27.3633C28.8172 26.4258 30 25.2429 30 23.7891V9.72656C30 8.27268 28.8172 7.08984 27.3633 7.08984ZM3.51562 6.21094C3.51562 5.72631 3.9099 5.33203 4.39453 5.33203H23.8477C24.3323 5.33203 24.7266 5.72631 24.7266 6.21094V7.08984H20.332C18.8781 7.08984 17.6953 8.27268 17.6953 9.72656V21.1523H3.51562V6.21094ZM1.75781 23.7891V22.9102H17.6953V23.7891C17.6953 24.0971 17.7489 24.3929 17.8465 24.668H2.63672C2.15209 24.668 1.75781 24.2737 1.75781 23.7891ZM28.2422 23.7891C28.2422 24.2737 27.8479 24.668 27.3633 24.668H20.332C19.8474 24.668 19.4531 24.2737 19.4531 23.7891V9.72656C19.4531 9.24193 19.8474 8.84766 20.332 8.84766H27.3633C27.8479 8.84766 28.2422 9.24193 28.2422 9.72656V23.7891Z\" fill=\"#2D3748\"/><path d=\"M24.7266 21.1523H22.9688C22.4834 21.1523 22.0898 21.5459 22.0898 22.0312C22.0898 22.5166 22.4834 22.9102 22.9688 22.9102H24.7266C25.212 22.9102 25.6055 22.5166 25.6055 22.0312C25.6055 21.5459 25.212 21.1523 24.7266 21.1523Z\" fill=\"#4299E1\"/><path d=\"M23.8477 12.3633C24.3331 12.3633 24.7266 11.9698 24.7266 11.4844C24.7266 10.999 24.3331 10.6055 23.8477 10.6055C23.3622 10.6055 22.9688 10.999 22.9688 11.4844C22.9688 11.9698 23.3622 12.3633 23.8477 12.3633Z\" fill=\"#4299E1\"/>\n                </svg>    \n\n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Many Platforms Supported\n                </h1>\n                \n                <p class=\"mt-2 text-gray-500\">\n                    We make desktop apps and mobile apps, web applications and games. These always support a wide variety of platform targets.\n                </p>\n            </div>\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <g clip-path=\"url(#clip0)\"><path d=\"M26.599 4.339a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zM7.151 25.661a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zM23.486 13.163a8.636 8.636 0 00-1.19-2.873l1.123-1.123-2.592-2.59L19.705 7.7a8.636 8.636 0 00-2.873-1.19V4.921h-3.664v1.586a8.634 8.634 0 00-2.873 1.19l-1.122-1.12-2.592 2.589 1.123 1.123a8.636 8.636 0 00-1.19 2.873H4.922l-.002 3.663h1.592A8.626 8.626 0 007.704 19.7l-1.127 1.127 2.59 2.591 1.128-1.127a8.623 8.623 0 002.873 1.19v1.597h3.664v-1.597a8.628 8.628 0 002.873-1.19l1.128 1.128 2.59-2.592-1.127-1.127a8.627 8.627 0 001.19-2.873h1.593v-3.664h-1.593zM15 19.256a4.255 4.255 0 110-8.511 4.255 4.255 0 010 8.51z\" fill=\"#4299E1\"/><path d=\"M5.276 23.2c-.42 0-.823.105-1.182.302A13.853 13.853 0 011.172 15C1.172 7.375 7.375 1.172 15 1.172c.927 0 1.854.092 2.754.274a.586.586 0 00.232-1.149A15.111 15.111 0 0015 0C10.993 0 7.226 1.56 4.393 4.393A14.902 14.902 0 000 15c0 3.37 1.144 6.66 3.228 9.296-.268.4-.413.872-.413 1.365 0 .657.257 1.275.721 1.74a2.444 2.444 0 001.74.721c.658 0 1.276-.256 1.74-.721.465-.465.721-1.083.721-1.74s-.256-1.276-.72-1.74a2.445 2.445 0 00-1.74-.72zm.912 3.373a1.28 1.28 0 01-.912.377 1.28 1.28 0 01-.911-.377 1.28 1.28 0 01-.378-.912c0-.344.134-.668.378-.912a1.28 1.28 0 01.911-.377c.345 0 .668.134.912.378.243.243.377.567.377.911 0 .344-.134.668-.377.912zM26.772 5.703a2.465 2.465 0 00-.308-3.104 2.446 2.446 0 00-1.74-.721c-.658 0-1.276.256-1.74.72a2.445 2.445 0 00-.721 1.74c0 .658.256 1.276.72 1.741.465.465 1.083.72 1.74.72.42 0 .824-.104 1.183-.3A13.854 13.854 0 0128.828 15c0 7.625-6.203 13.828-13.828 13.828-.918 0-1.836-.09-2.728-.269a.586.586 0 00-.23 1.15c.968.193 1.963.291 2.958.291 4.007 0 7.773-1.56 10.607-4.393A14.902 14.902 0 0030 15c0-3.37-1.145-6.66-3.228-9.297zm-2.96-.452a1.28 1.28 0 01-.377-.912c0-.344.134-.668.377-.911a1.28 1.28 0 01.912-.378 1.29 1.29 0 010 2.578 1.28 1.28 0 01-.912-.377z\" fill=\"#2D3748\"/><path d=\"M12.582 25.078c0 .324.263.586.586.586h3.664a.586.586 0 00.586-.586v-1.136a9.179 9.179 0 002.199-.911l.802.802a.586.586 0 00.829 0l2.59-2.592a.586.586 0 000-.828l-.802-.802a9.169 9.169 0 00.911-2.199h1.132a.586.586 0 00.586-.585v-3.664a.586.586 0 00-.586-.586h-1.132a9.17 9.17 0 00-.911-2.199l.797-.797a.587.587 0 000-.829l-2.592-2.59a.586.586 0 00-.829 0l-.795.797a9.177 9.177 0 00-2.2-.912V4.922a.586.586 0 00-.585-.586h-3.664a.586.586 0 00-.586.586v1.126a9.169 9.169 0 00-2.199.91l-.796-.795a.586.586 0 00-.828 0l-2.592 2.59a.585.585 0 000 .828l.797.797a9.173 9.173 0 00-.911 2.199h-1.13a.586.586 0 00-.586.585l-.002 3.664a.585.585 0 00.586.586h1.132c.207.77.512 1.507.911 2.2l-.801.8a.586.586 0 000 .83l2.59 2.59a.586.586 0 00.829 0l.801-.801a9.185 9.185 0 002.2.911v1.136zm-1.97-3.28a.586.586 0 00-.732.078l-.713.714-1.761-1.763.712-.713a.586.586 0 00.078-.732 8.02 8.02 0 01-1.11-2.679.586.586 0 00-.572-.462H5.507l.002-2.492h1.005a.586.586 0 00.572-.463 8.022 8.022 0 011.11-2.678.586.586 0 00-.078-.733l-.708-.708 1.763-1.761.707.707c.196.196.5.228.733.078a8.016 8.016 0 012.678-1.11.586.586 0 00.463-.573v-1h2.492v1c0 .277.193.515.463.573a8.024 8.024 0 012.678 1.11c.232.15.537.118.732-.078l.708-.707 1.762 1.761-.708.708a.586.586 0 00-.078.732 8.027 8.027 0 011.11 2.679c.058.27.297.463.573.463h1.007v2.492h-1.007a.586.586 0 00-.573.462 8.02 8.02 0 01-1.11 2.679.586.586 0 00.078.732l.713.713-1.761 1.762-.714-.713a.586.586 0 00-.732-.078 8.027 8.027 0 01-2.678 1.11.586.586 0 00-.463.573v1.011h-2.492v-1.01a.586.586 0 00-.463-.574 8.021 8.021 0 01-2.678-1.11z\" fill=\"#2D3748\"/><path d=\"M19.841 15A4.847 4.847 0 0015 10.158 4.847 4.847 0 0010.158 15 4.847 4.847 0 0015 19.841 4.847 4.847 0 0019.841 15zm-8.51 0A3.674 3.674 0 0115 11.33 3.674 3.674 0 0118.67 15 3.674 3.674 0 0115 18.67 3.674 3.674 0 0111.33 15z\" fill=\"#2D3748\"/><path d=\"M20.395 2.216a.59.59 0 00.415-.172.593.593 0 00.171-.415.59.59 0 00-.586-.586.589.589 0 00-.586.586.589.589 0 00.586.587zM9.63 27.794a.59.59 0 00-.586.586.59.59 0 00.586.586.59.59 0 00.586-.586.59.59 0 00-.586-.585z\" fill=\"#4299E1\"/></g><defs><clipPath id=\"clip0\"><path fill=\"#fff\" d=\"M0 0h30v30H0z\"/></clipPath></defs>\n                </svg>\n            \n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Cycles Perfected\n                </h1>\n            \n                <p class=\"mt-2 text-gray-500\">\n                    Release cycles are tuned to a fine hair. Development and testing cycles are likewise strictly conditioned. The result is stable and relaible production software.\n                </p>\n            </div>\n        </div>\n    </div>\n</div>"
+            "templateData": "<div class=\"bg-white py-10\">\n    <div class=\"container px-6 py-12 mx-auto\">\n        <h3 class=\"text-center text-3xl pb-20\">\n            Why do people <i class=\"text-red-600\">Love</i> Blazed Labs?\n        </h3>\n        <div class=\"grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3\">\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <path d=\"M29.6931 14.2283L22.7556 6.87823C22.3292 6.426 21.6175 6.40538 21.1652 6.83212C20.7137 7.25851 20.6927 7.9706 21.1195 8.42248L27.3284 15L21.1195 21.5783C20.6927 22.0302 20.7137 22.7419 21.1652 23.1687C21.3827 23.3738 21.6606 23.4754 21.9374 23.4754C22.2363 23.4754 22.5348 23.3569 22.7557 23.1233L29.6932 15.7729C30.1022 15.339 30.1023 14.6618 29.6931 14.2283Z\" fill=\"#2D3748\"/><path d=\"M8.88087 21.578L2.67236 15L8.88087 8.42215C9.30726 7.97028 9.28664 7.25812 8.83476 6.83179C8.38323 6.4054 7.67073 6.42603 7.2444 6.87791L0.306858 14.2279C-0.102245 14.6614 -0.102245 15.3391 0.306858 15.7726L7.24475 23.123C7.466 23.3574 7.76413 23.4755 8.06302 23.4755C8.33976 23.4755 8.61767 23.3735 8.83476 23.1684C9.28705 22.742 9.30726 22.0299 8.88087 21.578Z\" fill=\"#2D3748\"/><path d=\"M16.8201 3.08774C16.2062 2.99476 15.6317 3.41622 15.5379 4.03011L12.2379 25.6302C12.1441 26.2445 12.566 26.8186 13.1803 26.9124C13.238 26.921 13.295 26.9252 13.3516 26.9252C13.898 26.9252 14.3773 26.5266 14.4624 25.97L17.7624 4.3699C17.8562 3.7556 17.4343 3.1815 16.8201 3.08774Z\" fill=\"#4299E1\"/>\n                </svg>\n\n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Open Source Software\n                </h1>\n\n                <p class=\"mt-2 text-gray-500\">\n                    We create open source software and support open source projects. We are working to make software development more transparent and more reliable.\n                </p>\n            </div>\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <path d=\"M27.3633 7.08984H26.4844V6.21094C26.4844 4.75705 25.3015 3.57422 23.8477 3.57422H4.39453C2.94064 3.57422 1.75781 4.75705 1.75781 6.21094V21.1523H0.878906C0.393516 21.1523 0 21.5459 0 22.0312V23.7891C0 25.2429 1.18283 26.4258 2.63672 26.4258H27.3633C28.8172 26.4258 30 25.2429 30 23.7891V9.72656C30 8.27268 28.8172 7.08984 27.3633 7.08984ZM3.51562 6.21094C3.51562 5.72631 3.9099 5.33203 4.39453 5.33203H23.8477C24.3323 5.33203 24.7266 5.72631 24.7266 6.21094V7.08984H20.332C18.8781 7.08984 17.6953 8.27268 17.6953 9.72656V21.1523H3.51562V6.21094ZM1.75781 23.7891V22.9102H17.6953V23.7891C17.6953 24.0971 17.7489 24.3929 17.8465 24.668H2.63672C2.15209 24.668 1.75781 24.2737 1.75781 23.7891ZM28.2422 23.7891C28.2422 24.2737 27.8479 24.668 27.3633 24.668H20.332C19.8474 24.668 19.4531 24.2737 19.4531 23.7891V9.72656C19.4531 9.24193 19.8474 8.84766 20.332 8.84766H27.3633C27.8479 8.84766 28.2422 9.24193 28.2422 9.72656V23.7891Z\" fill=\"#2D3748\"/><path d=\"M24.7266 21.1523H22.9688C22.4834 21.1523 22.0898 21.5459 22.0898 22.0312C22.0898 22.5166 22.4834 22.9102 22.9688 22.9102H24.7266C25.212 22.9102 25.6055 22.5166 25.6055 22.0312C25.6055 21.5459 25.212 21.1523 24.7266 21.1523Z\" fill=\"#4299E1\"/><path d=\"M23.8477 12.3633C24.3331 12.3633 24.7266 11.9698 24.7266 11.4844C24.7266 10.999 24.3331 10.6055 23.8477 10.6055C23.3622 10.6055 22.9688 10.999 22.9688 11.4844C22.9688 11.9698 23.3622 12.3633 23.8477 12.3633Z\" fill=\"#4299E1\"/>\n                </svg>    \n\n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Many Platforms Supported\n                </h1>\n                \n                <p class=\"mt-2 text-gray-500\">\n                    We make desktop apps and mobile apps, web applications and games. These always support a wide variety of platform targets.\n                </p>\n            </div>\n            <div>\n                <svg class=\"w-8 h-8\" viewBox=\"0 0 30 30\" fill=\"none\">\n                    <g clip-path=\"url(#clip0)\"><path d=\"M26.599 4.339a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zM7.151 25.661a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zM23.486 13.163a8.636 8.636 0 00-1.19-2.873l1.123-1.123-2.592-2.59L19.705 7.7a8.636 8.636 0 00-2.873-1.19V4.921h-3.664v1.586a8.634 8.634 0 00-2.873 1.19l-1.122-1.12-2.592 2.589 1.123 1.123a8.636 8.636 0 00-1.19 2.873H4.922l-.002 3.663h1.592A8.626 8.626 0 007.704 19.7l-1.127 1.127 2.59 2.591 1.128-1.127a8.623 8.623 0 002.873 1.19v1.597h3.664v-1.597a8.628 8.628 0 002.873-1.19l1.128 1.128 2.59-2.592-1.127-1.127a8.627 8.627 0 001.19-2.873h1.593v-3.664h-1.593zM15 19.256a4.255 4.255 0 110-8.511 4.255 4.255 0 010 8.51z\" fill=\"#4299E1\"/><path d=\"M5.276 23.2c-.42 0-.823.105-1.182.302A13.853 13.853 0 011.172 15C1.172 7.375 7.375 1.172 15 1.172c.927 0 1.854.092 2.754.274a.586.586 0 00.232-1.149A15.111 15.111 0 0015 0C10.993 0 7.226 1.56 4.393 4.393A14.902 14.902 0 000 15c0 3.37 1.144 6.66 3.228 9.296-.268.4-.413.872-.413 1.365 0 .657.257 1.275.721 1.74a2.444 2.444 0 001.74.721c.658 0 1.276-.256 1.74-.721.465-.465.721-1.083.721-1.74s-.256-1.276-.72-1.74a2.445 2.445 0 00-1.74-.72zm.912 3.373a1.28 1.28 0 01-.912.377 1.28 1.28 0 01-.911-.377 1.28 1.28 0 01-.378-.912c0-.344.134-.668.378-.912a1.28 1.28 0 01.911-.377c.345 0 .668.134.912.378.243.243.377.567.377.911 0 .344-.134.668-.377.912zM26.772 5.703a2.465 2.465 0 00-.308-3.104 2.446 2.446 0 00-1.74-.721c-.658 0-1.276.256-1.74.72a2.445 2.445 0 00-.721 1.74c0 .658.256 1.276.72 1.741.465.465 1.083.72 1.74.72.42 0 .824-.104 1.183-.3A13.854 13.854 0 0128.828 15c0 7.625-6.203 13.828-13.828 13.828-.918 0-1.836-.09-2.728-.269a.586.586 0 00-.23 1.15c.968.193 1.963.291 2.958.291 4.007 0 7.773-1.56 10.607-4.393A14.902 14.902 0 0030 15c0-3.37-1.145-6.66-3.228-9.297zm-2.96-.452a1.28 1.28 0 01-.377-.912c0-.344.134-.668.377-.911a1.28 1.28 0 01.912-.378 1.29 1.29 0 010 2.578 1.28 1.28 0 01-.912-.377z\" fill=\"#2D3748\"/><path d=\"M12.582 25.078c0 .324.263.586.586.586h3.664a.586.586 0 00.586-.586v-1.136a9.179 9.179 0 002.199-.911l.802.802a.586.586 0 00.829 0l2.59-2.592a.586.586 0 000-.828l-.802-.802a9.169 9.169 0 00.911-2.199h1.132a.586.586 0 00.586-.585v-3.664a.586.586 0 00-.586-.586h-1.132a9.17 9.17 0 00-.911-2.199l.797-.797a.587.587 0 000-.829l-2.592-2.59a.586.586 0 00-.829 0l-.795.797a9.177 9.177 0 00-2.2-.912V4.922a.586.586 0 00-.585-.586h-3.664a.586.586 0 00-.586.586v1.126a9.169 9.169 0 00-2.199.91l-.796-.795a.586.586 0 00-.828 0l-2.592 2.59a.585.585 0 000 .828l.797.797a9.173 9.173 0 00-.911 2.199h-1.13a.586.586 0 00-.586.585l-.002 3.664a.585.585 0 00.586.586h1.132c.207.77.512 1.507.911 2.2l-.801.8a.586.586 0 000 .83l2.59 2.59a.586.586 0 00.829 0l.801-.801a9.185 9.185 0 002.2.911v1.136zm-1.97-3.28a.586.586 0 00-.732.078l-.713.714-1.761-1.763.712-.713a.586.586 0 00.078-.732 8.02 8.02 0 01-1.11-2.679.586.586 0 00-.572-.462H5.507l.002-2.492h1.005a.586.586 0 00.572-.463 8.022 8.022 0 011.11-2.678.586.586 0 00-.078-.733l-.708-.708 1.763-1.761.707.707c.196.196.5.228.733.078a8.016 8.016 0 012.678-1.11.586.586 0 00.463-.573v-1h2.492v1c0 .277.193.515.463.573a8.024 8.024 0 012.678 1.11c.232.15.537.118.732-.078l.708-.707 1.762 1.761-.708.708a.586.586 0 00-.078.732 8.027 8.027 0 011.11 2.679c.058.27.297.463.573.463h1.007v2.492h-1.007a.586.586 0 00-.573.462 8.02 8.02 0 01-1.11 2.679.586.586 0 00.078.732l.713.713-1.761 1.762-.714-.713a.586.586 0 00-.732-.078 8.027 8.027 0 01-2.678 1.11.586.586 0 00-.463.573v1.011h-2.492v-1.01a.586.586 0 00-.463-.574 8.021 8.021 0 01-2.678-1.11z\" fill=\"#2D3748\"/><path d=\"M19.841 15A4.847 4.847 0 0015 10.158 4.847 4.847 0 0010.158 15 4.847 4.847 0 0015 19.841 4.847 4.847 0 0019.841 15zm-8.51 0A3.674 3.674 0 0115 11.33 3.674 3.674 0 0118.67 15 3.674 3.674 0 0115 18.67 3.674 3.674 0 0111.33 15z\" fill=\"#2D3748\"/><path d=\"M20.395 2.216a.59.59 0 00.415-.172.593.593 0 00.171-.415.59.59 0 00-.586-.586.589.589 0 00-.586.586.589.589 0 00.586.587zM9.63 27.794a.59.59 0 00-.586.586.59.59 0 00.586.586.59.59 0 00.586-.586.59.59 0 00-.586-.585z\" fill=\"#4299E1\"/></g><defs><clipPath id=\"clip0\"><path fill=\"#fff\" d=\"M0 0h30v30H0z\"/></clipPath></defs>\n                </svg>\n            \n                <h1 class=\"mt-4 text-xl font-semibold text-gray-800\">\n                    Cycles Perfected\n                </h1>\n            \n                <p class=\"mt-2 text-gray-500\">\n                    Release cycles are tuned to a fine hair. Development and testing cycles are likewise strictly conditioned. \n                </p>\n            </div>\n        </div>\n    </div>\n</div>"
         },
         {
             "name": "FooterComponent",
@@ -808,7 +808,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "                               \n\n<header>\n    <nav class=\"fixed w-full border-b border-black bg-gray-200\">\n        <div class=\"container m-auto px-6 md:px-12 lg:px-6\">\n            <div class=\"lg:flex lg:flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0\">\n                <div class=\"w-full flex justify-between lg:w-auto\">\n                    <a href=\"/home\" title=\"Blazed Company\" aria-label=\"logo\">\n                        <img src=\"https://blazed.sirv.com/logo/Beaker-Red.png?w=45&h=45\" class=\"hover:opacity-75\" width=\"45\" height=\"45\">\n                    </a>\n                    <span class=\"text-red-700\">\n                    <button (click)=\"burgerVisible = !burgerVisible\" aria-label=\"humburger\" id=\"hamburger\" class=\"relative w-10 h-10 -mr-2 lg:hidden\">\n                        <ng-container *ngIf=\"burgerVisible\">\n                            <svg width=\"45\" height=\"45\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z\" clip-rule=\"evenodd\"/>\n                                <path fill-rule=\"evenodd\" d=\"M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z\" clip-rule=\"evenodd\"/>\n                            </svg>\n                        </ng-container>\n                        <ng-container *ngIf=\"!burgerVisible\">\n                            <svg width=\"45\" height=\"45\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n                                <path fill-rule=\"evenodd\" d=\"M4.5 13.5A.5.5 0 015 13h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 9h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 5h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5z\" clip-rule=\"evenodd\"/>\n                            </svg>\n                        </ng-container>\n                    </button>\n                    </span>\n                </div>\n\n                <div hidden class=\"w-full md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex\">\n                    <div class=\"block w-full lg:items-center lg:flex\">\n                        \n                        <app-nav></app-nav>\n\n                    </div>\n                </div>\n                <ng-container *ngIf=\"burgerVisible\">\n                    <div class=\"menu-mobile text-center\">\n                        <app-nav></app-nav>\n                    </div>\n                </ng-container>\n            </div>\n        </div>\n    </nav>\n</header>"
+            "templateData": "<header>\n    <nav class=\"fixed w-full border-b border-black bg-gray-200\">\n        <div class=\"container m-auto px-6 md:px-12 lg:px-6\">\n            <div class=\"lg:flex lg:flex-wrap items-center justify-between py-6 gap-6 md:py-4 md:gap-0\">\n                <div class=\"w-full flex justify-between lg:w-auto\">\n                    <a href=\"/home\" title=\"Blazed Company\" aria-label=\"logo\">\n                        <img src=\"https://blazed.sirv.com/logo/Beaker-Red.png?w=45&h=45\" class=\"hover:opacity-75\" width=\"45\" height=\"45\">\n                    </a>\n                    <span class=\"text-red-700\">\n                    <button (click)=\"burgerVisible = !burgerVisible\" aria-label=\"humburger\" id=\"hamburger\" class=\"relative w-10 h-10 -mr-2 lg:hidden\">\n                        <ng-container *ngIf=\"burgerVisible\">\n                            <svg width=\"45\" height=\"45\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" d=\"M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z\" clip-rule=\"evenodd\"/>\n                                <path fill-rule=\"evenodd\" d=\"M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z\" clip-rule=\"evenodd\"/>\n                            </svg>\n                        </ng-container>\n                        <ng-container *ngIf=\"!burgerVisible\">\n                            <svg width=\"45\" height=\"45\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n                                <path fill-rule=\"evenodd\" d=\"M4.5 13.5A.5.5 0 015 13h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 9h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm0-4A.5.5 0 015 5h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5z\" clip-rule=\"evenodd\"/>\n                            </svg>\n                        </ng-container>\n                    </button>\n                    </span>\n                </div>\n                <div hidden class=\"w-full md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent lg:w-auto lg:flex\">\n                    <div class=\"block w-full lg:items-center lg:flex\">\n                        <app-nav></app-nav>\n                    </div>\n                </div>\n                <ng-container *ngIf=\"burgerVisible\">\n                    <div class=\"menu-mobile text-center h-screen\">\n                        <app-nav></app-nav>\n                    </div>\n                </ng-container>\n            </div>\n        </div>\n    </nav>\n</header>"
         },
         {
             "name": "HeroComponent",
@@ -870,7 +870,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"pt-32 pb-20 md:pt-40 bg-gray-50\">\n    <div class=\"container m-auto px-6 md:px-12 lg:px-6\">\n        <div class=\"lg:flex lg:items-center lg:gap-x-16\">\n            <div class=\"space-y-8 lg:w-7/12\">\n                <h1 class=\" font-bold text-gray-900 text-4xl md:text-5xl\">\n                    Blazed Labs LLC\n                </h1>\n                <p class=\"text-gray-600 lg:w-11/12\">\n                   Software development, telecom, and publishing company.\n                </p>\n\n                <span class=\"block font-semibold pl-5\">\n                    We turn Dreams into Reality.\n                </span>\n                \n                <h3 class=\"text-md text-gray-600 pl-5\">\n                    Github Profiles:\n                </h3>\n                <div class=\"grid grid-cols-3 space-x-4 md:space-x-6 md:flex\">\n                    <a target=\"_blank\" href=\"https://github.com/blazed-labs/\" class=\"p-4 border border-gray-200 rounded-md hover:border-black hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_black.png?w=128&h=128\" alt=\"slack logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-labs\n                            </span>\n                        </div>\n                    </a>    \n                    <a target=\"_blank\" href=\"https://github.com/blazed-space/\" class=\"p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_blue.png?w=128&h=128\" alt=\"chat logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-space\n                            </span>\n                        </div>\n                    </a>   \n                    <a target=\"_blank\" href=\"https://github.com/blazed-xyz/\" class=\"p-4 border border-gray-200 rounded-md hover:border-red-400 hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_red.png?w=128&h=128\" alt=\"chat logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-xyz\n                            </span>\n                        </div>\n                    </a>    \n                </div>\n            </div>\n\n            <div hidden class=\"lg:block lg:w-5/12\">\n                <img src=\"https://blazed.sirv.com/promo/208444757_336900631274908_2144811183765452864_n.png?w=420&h=280\" class=\"w-full\" alt=\"wath illustration\" loading=\"lazy\" width=\"320\" height=\"280\">\n            </div>\n        </div>\n    </div>\n</div>"
+            "templateData": "<div class=\"pt-32 pb-20 md:pt-40 bg-gray-50\">\n    <div class=\"container m-auto px-6 md:px-12 lg:px-6\">\n        <div class=\"lg:flex lg:items-center lg:gap-x-16\">\n            <div class=\"space-y-8 lg:w-7/12\">\n                <h1 class=\" font-bold text-gray-900 text-4xl md:text-5xl\">\n                    Blazed Labs LLC\n                </h1>\n                <p class=\"text-gray-600 lg:w-11/12\">\n                   Software development, telecom, and publishing company.\n                </p>\n                <h3 class=\"block text-2xl font-semibold pl-5\">\n                    We turn Dreams into Reality.\n                </h3>\n                <h3 class=\"text-md text-gray-600 pl-5\">\n                    Github Profiles:\n                </h3>\n                <div class=\"grid grid-cols-3 space-x-4 md:space-x-6 md:flex\">\n                    <a target=\"_blank\" href=\"https://github.com/blazed-labs/\" class=\"p-4 border border-gray-200 rounded-md hover:border-black hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_black.png?w=128&h=128\" alt=\"slack logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-labs\n                            </span>\n                        </div>\n                    </a>    \n                    <a target=\"_blank\" href=\"https://github.com/blazed-space/\" class=\"p-4 border border-gray-200 rounded-md hover:border-blue-400 hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_blue.png?w=128&h=128\" alt=\"chat logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-space\n                            </span>\n                        </div>\n                    </a>   \n                    <a target=\"_blank\" href=\"https://github.com/blazed-xyz/\" class=\"p-4 border border-gray-200 rounded-md hover:border-red-400 hover:shadow-lg\">\n                        <div class=\"flex justify-center space-x-4\">\n                            <img class=\"w-6\" src=\"https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash_red.png?w=128&h=128\" alt=\"chat logo\" loading=\"lazy\" width=\"128\" height=\"128\">\n                            <span class=\"hidden font-medium md:block\">\n                                @blazed-xyz\n                            </span>\n                        </div>\n                    </a>    \n                </div>\n            </div>\n            <div hidden class=\"lg:block lg:w-5/12\">\n                <img src=\"https://blazed.sirv.com/promo/208444757_336900631274908_2144811183765452864_n.png?w=420&h=280\" class=\"w-full\" alt=\"wath illustration\" loading=\"lazy\" width=\"320\" height=\"280\">\n            </div>\n        </div>\n    </div>\n</div>"
         },
         {
             "name": "HomeComponent",
@@ -1083,68 +1083,6 @@
             "templateData": "<ng-container *ngIf=\"showBox\">\n    <div class=\"flex shadow-md gap-6 rounded-lg overflow-hidden divide-x max-w-2xl dark:bg-gray-900 dark:text-gray-100 divide-gray-700\">\n        <div (click)=\"closeMessage()\" class=\"group cursor-pointer absolute bg-green-300 mt-20 flex flex-1 flex-col p-4 border-l-8 shadow-md rounded-lg dark:border-violet-400\">\n            <span class=\"text-2xl\">\n                Success!\n            </span>\n            <span class=\"text-xs dark:text-gray-400\">\n                Your mesage was successfully sent. A company representative will be in contact shortly.\n            </span>\n            <button class=\"px-4 pt-3 flex items-center text-xs group-hover:underline uppercase tracking-wide dark:text-gray-400 dark:border-gray-700\">\n                Dismiss\n            </button>\n        </div>\n    </div>\n</ng-container>\n<app-home></app-home>"
         },
         {
-            "name": "TeamComponent",
-            "id": "component-TeamComponent-8ff23d07ef94f0dcd1bbff0a0e7573d774f8dfb8a33c62720ff362099d956353a8f73a846230daa432a6f3b1bc3950c02ce3b3d79a28aae7ec51fd680b12a234",
-            "file": "src/app/team/team.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-team",
-            "styleUrls": [
-                "./team.component.css"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./team.component.html"
-            ],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-team',\n  templateUrl: './team.component.html',\n  styleUrls: ['./team.component.css']\n})\nexport class TeamComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./team.component.css"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<article class=\"pt-20\">\n    <div class=\"container p-6 mx-auto bg-white dark:bg-gray-800\">\n        <h2 class=\"text-xl font-medium text-gray-800 text-center capitalize dark:text-white md:text-2xl\">\n            Our Team\n        </h2>\n\n        <div class=\"flex items-center justify-center\">\n            <div class=\"grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4\">\n                <div class=\"w-full max-w-xs text-center\">\n                    <img class=\"object-cover object-center w-full h-48 mx-auto rounded-lg\" src=\"https://blazed.sirv.com/ibis/blazed-games-desktop.jpg\" alt=\"avatar\"/>\n\n                    <div class=\"mt-2\">\n                        <h3 class=\"text-lg font-medium text-gray-700 dark:text-gray-200\">\n                            Tyler Ruff\n                        </h3>\n                        <a target=\"_blank\" href=\"https://tyler-ruff.com/\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Website\n                        </a>\n                        &nbsp;\n                        <span>\n                            |\n                        </span>\n                        &nbsp;\n                        <a target=\"_blank\" href=\"https://www.facebook.com/blazed.space/\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Facebook\n                        </a>\n                        &nbsp;\n                        <span>\n                            |\n                        </span>\n                        &nbsp;\n                        <a target=\"_blank\" href=\"https://github.com/tyler-ruff\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Github\n                        </a>\n                    </div>\n                </div>\n\n                <div class=\"w-full max-w-xs text-center\">\n                    <img class=\"object-cover object-center w-full h-48 mx-auto rounded-lg\" src=\"https://blazed.sirv.com/ibis/blazed-space.jpg\" alt=\"avatar\"/>\n\n                    <div class=\"mt-2\">\n                        <h3 class=\"text-lg font-medium text-gray-700 dark:text-gray-200\">\n                            Plotinus Magnus\n                        </h3>\n                        <a target=\"_blank\" href=\"https://www.facebook.com/plotinusmagnus/\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Facebook\n                        </a>\n                    </div>\n                </div>\n\n                <div class=\"w-full max-w-xs text-center\">\n                    <img class=\"object-cover object-center w-full h-48 mx-auto rounded-lg\" src=\"https://blazed.sirv.com/ibis/blazed-world.jpg\" alt=\"avatar\"/>\n\n                    <div class=\"mt-2\">\n                        <h3 class=\"text-lg font-medium text-gray-700 dark:text-gray-200\">\n                            Alexander Mazelow\n                        </h3>\n                        <a target=\"_blank\" href=\"https://www.facebook.com/alexmazelow/\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Facebook\n                        </a>\n                    </div>\n                </div>\n\n                <div class=\"w-full max-w-xs text-center\">\n                    <img class=\"object-cover object-center w-full h-48 mx-auto rounded-lg\" src=\"https://blazed.sirv.com/ibis/blazed-xyz.jpg\" alt=\"avatar\"/>\n\n                    <div class=\"mt-2\">\n                        <h3 class=\"text-lg font-medium text-gray-700 dark:text-gray-200\">\n                            Woodrow Bronzelton\n                        </h3>\n                        <a target=\"_blank\" href=\"https://www.facebook.com/woodrowbronze/\" class=\"mt-1 font-medium text-gray-600 hover:underline\">\n                            Facebook\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>"
-        },
-        {
             "name": "UnknownComponent",
             "id": "component-UnknownComponent-f1b5d0d7ff59029229f28564afd3c2c80ef3f052a2e94daf24909c15794cf7f402126c59bca7380b57421ddf26515d9715632c68e9ee871446d528cd3ee18ef8",
             "file": "src/app/unknown/unknown.component.ts",
@@ -1312,13 +1250,13 @@
         },
         {
             "name": "AppRoutingModule",
-            "id": "module-AppRoutingModule-276447219268dbb684efa760416145a4bc74b9e2f3d71ebdead81ba6f1c0ebcf8b75486a125aaa3b2ebd2da8e540a0726188534998fe005a86cd4144bc261404",
+            "id": "module-AppRoutingModule-13f46ca37909e13a011b9a9f2f8549b1352bddebc398e0092ff49b8fcc8c4d8827516cb1cf6dfa0fe0434e10ad86d7067ce97808e6809bff5056b65c682cffa4",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app-routing.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { AboutComponent } from './about/about.component';\nimport { ContactComponent } from './contact/contact.component';\nimport { DirectoryComponent } from './directory/directory.component';\nimport { DivisionsComponent } from './divisions/divisions.component';\nimport { HomeComponent } from './home/home.component';\nimport { SuccessComponent } from './success/success.component';\nimport { TeamComponent } from './team/team.component';\nimport { UnknownComponent } from './unknown/unknown.component';\n\nconst routes: Routes = [\n  { path: 'home', component: HomeComponent },\n  { path: 'about', component: AboutComponent },\n  { path: 'directory', component: DirectoryComponent },\n  { path: 'divisions', component: DivisionsComponent },\n  { path: 'team', component: TeamComponent },\n  { path: 'contact', component: ContactComponent },\n  { path: 'success', component: SuccessComponent },\n  { path: '',   redirectTo: '/home', pathMatch: 'full' },\n  { path: '**', component: UnknownComponent },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { AboutComponent } from './about/about.component';\nimport { ContactComponent } from './contact/contact.component';\nimport { DirectoryComponent } from './directory/directory.component';\nimport { DivisionsComponent } from './divisions/divisions.component';\nimport { HomeComponent } from './home/home.component';\nimport { SuccessComponent } from './success/success.component';\nimport { UnknownComponent } from './unknown/unknown.component';\n\nconst routes: Routes = [\n  { path: 'home', component: HomeComponent },\n  { path: 'about', component: AboutComponent },\n  { path: 'directory', component: DirectoryComponent },\n  { path: 'divisions', component: DivisionsComponent },\n  { path: 'contact', component: ContactComponent },\n  { path: 'success', component: SuccessComponent },\n  { path: '',   redirectTo: '/home', pathMatch: 'full' },\n  { path: '**', component: UnknownComponent },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1423,11 +1361,31 @@
                 "name": "Main",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/contact/contact.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "() => ({\n    template: `\n        <app-contact></app-contact>\n    `\n})"
+            },
+            {
+                "name": "Main",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/directory/directory.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "() => ({\n    template: `\n        <app-directory></app-directory>\n    `\n})"
+            },
+            {
+                "name": "Main",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/divisions/divisions.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "() => ({\n    template: `\n        <app-divisions></app-divisions>\n    `\n})"
             },
             {
                 "name": "Main",
@@ -1552,6 +1510,18 @@
                     "defaultValue": "() => ({\n    template: `\n        <app-about></app-about>\n    `\n})"
                 }
             ],
+            "src/app/contact/contact.stories.ts": [
+                {
+                    "name": "Main",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/contact/contact.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "() => ({\n    template: `\n        <app-contact></app-contact>\n    `\n})"
+                }
+            ],
             "src/app/directory/directory.stories.ts": [
                 {
                     "name": "Main",
@@ -1562,6 +1532,18 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "() => ({\n    template: `\n        <app-directory></app-directory>\n    `\n})"
+                }
+            ],
+            "src/app/divisions/divisions.stories.ts": [
+                {
+                    "name": "Main",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/divisions/divisions.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "() => ({\n    template: `\n        <app-divisions></app-divisions>\n    `\n})"
                 }
             ],
             "src/app/footer/footer.stories.ts": [
@@ -1618,10 +1600,6 @@
                     {
                         "path": "divisions",
                         "component": "DivisionsComponent"
-                    },
-                    {
-                        "path": "team",
-                        "component": "TeamComponent"
                     },
                     {
                         "path": "contact",
@@ -1696,6 +1674,16 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/contact/contact.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Main",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/directory/directory.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1730,6 +1718,16 @@
                 "name": "DivisionsComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/divisions/divisions.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Main",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1852,15 +1850,6 @@
                 "name": "SuccessComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/team/team.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "TeamComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
                 "status": "low"
             },
             {

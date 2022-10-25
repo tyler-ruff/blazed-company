@@ -1,7 +1,7 @@
 {
   "name": "fire",
   "short_name": "fire",
-  "theme_color": "#000000",
+  "theme_color": "#a60013",
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "./",
