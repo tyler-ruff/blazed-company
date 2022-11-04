@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HeaderComponent } from "./header.component";
-import { NavComponent } from '../nav/nav.component';
+import { NavComponent } from '../components/nav/nav.component';
 
 import { moduleMetadata } from '@storybook/angular';
 

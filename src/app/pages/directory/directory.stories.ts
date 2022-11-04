@@ -5,7 +5,7 @@ import { DirectoryComponent } from "./directory.component";
 import { moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';

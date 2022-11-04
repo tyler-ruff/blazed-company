@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AboutComponent } from "./about.component";
 
 import { moduleMetadata } from '@storybook/angular';
-import { FeaturesComponent } from '../features/features.component';
-import { ContactCtaComponent } from '../contact-cta/contact-cta.component';
+import { FeaturesComponent } from '../../components/features/features.component';
+import { ContactCtaComponent } from '../../components/contact-cta/contact-cta.component';
 
 export default {
     title: 'About',
