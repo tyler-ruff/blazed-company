@@ -25,6 +25,13 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
 import { CommonModule } from '@angular/common';
+import { NewsletterComponent } from './pages/newsletter/newsletter.component';
+import { NewsletterHeroComponent } from './components/newsletter-hero/newsletter-hero.component';
+import { DiscoverComponent } from './components/discover/discover.component';
+import { RuffSealComponent } from './components/ruff-seal/ruff-seal.component';
+import { AboutCardComponent } from './components/about-card/about-card.component';
+import { UnknownComponent } from './pages/unknown/unknown.component';
+import { PhoneFormatPipe } from './utils/format-phone-pipe/format-phone.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { CommonModule } from '@angular/common';
     DivisionsComponent,
     DirectoryComponent,
     ContactComponent,
-    SuccessComponent
+    SuccessComponent,
+    NewsletterComponent,
+    NewsletterHeroComponent,
+    DiscoverComponent,
+    RuffSealComponent,
+    AboutCardComponent,
+    UnknownComponent,
+    PhoneFormatPipe
   ],
   imports: [
     BrowserModule,

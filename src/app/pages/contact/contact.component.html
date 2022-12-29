@@ -31,29 +31,21 @@
                 Contact Us
             </h1>
             <form method="post" action="https://api.staticforms.xyz/submit" #contactForm>
-                <fieldset class="grid md:grid-cols-2 py-2">
-                    <div>
-                        <label for="field-name">
-                            Name:
-                        </label>
-                        <input required placeholder="John Smith" name="name" id="field-name" type="text" class="p-3 border" title="Please enter your first and last name.">
-                    </div>
-                    <div class="pt-5 md:pt-0">
-                        <label for="field-email">
-                            Email:
-                        </label>
-                        <input required placeholder="name@example.com" name="email" id="field-email" type="email" class="p-3 border" title="Please enter your email address.">
-                    </div>
-                </fieldset>
                 <fieldset class="py-2">
                     <div>
-                        <label for="field-company">
-                            Company (Optional):
+                        <label class="block py-2" for="field-name">
+                            Full Name:
                         </label>
-                        <input required placeholder="Blazed Labs LLC" name="$company" id="field-company" type="text" class="p-3 border w-full" title="Please enter your company name, if you are conducting business.">
+                        <input required placeholder="John Smith" name="name" id="field-name" type="text" class="p-3 border w-full" title="Please enter your first and last name.">
+                    </div>
+                    <div class="pt-5 md:pt-4 pb-2">
+                        <label class="block py-2" for="field-email">
+                            Email:
+                        </label>
+                        <input required placeholder="name@example.com" name="email" id="field-email" type="email" class="p-3 border w-full" title="Please enter your email address.">
                     </div>
                 </fieldset>
-                <fieldset class="py-2 pr-4">
+                <fieldset class="py-2 mb-4">
                     <div>
                         <select (change)="selectBox($event)" (ngModel)="selectedPurpose" required name="$nature" class="p-3 border w-full">
                             <option default>What is the nature of this inquiry?</option>
@@ -74,7 +66,7 @@
                 </fieldset>
                 <fieldset class="py-2">
                     <div>
-                        <label for="field-message">
+                        <label clas="block py-4" for="field-message">
                             Message:
                         </label>
                         <textarea required id="field-message" name="message" class="border p-3 w-full" title="Please enter your message."></textarea>

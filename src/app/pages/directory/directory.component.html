@@ -2,50 +2,26 @@
 	<div class="text-gray-800 pt-20">
 		<div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
 			<div class="max-w-3xl mx-auto text-center">
-				<h2 class="text-3xl font-extrabold sm:text-4xl">
-					Blazed Network Directory
-				</h2>
+				<h1 class="text-3xl font-extrabold sm:text-3xl select-none pb-10">
+					Blazed Network <span class="text-red-600">Directory</span>
+				</h1>
 			</div>
-			<dl class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
+			<dl class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8 select-none">
 				<div *ngFor="let website of directory$ | async" class="flex">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-red-800">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-					</svg>
-					<div class="ml-3">
-						<dt class="text-lg font-medium">
-							<a target="_blank" class="hover:underline" href="{{ website.url }}">
-								{{ website.name }}
-							</a>
-						</dt>
-						<dd class="mt-2 text-gray-600">
-							{{ website.desc }}
-						</dd>
-					</div>
+					<a target="_blank" class="group" href="{{ website.url }}" title="Visit {{ website.name }}">
+						<div class="block ml-3">
+							<dt class="text-lg font-medium">
+									&bull; <span class="group-hover:underline">{{ website.name }}</span>
+							</dt>
+							<dd class="mt-2 text-gray-600 group-hover:text-gray-500">
+								{{ website.desc }}
+							</dd>
+						</div>
+					</a>
 				</div>
 			</dl>
 		</div>
 	</div>
 	<hr />
-	<div class="bg-gray-50">
-		<div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-			<h2 class="text-3xl font-semibold tracking-tight text-gray-700 sm:text-4xl">
-				Join the Blazed Nation<br />
-				<span class="text-gray-500 text-2xl">And Claim Your Paradise, Today!</span>
-			</h2>
-			
-			<div class="mt-6 sm:-mx-2">
-				<div class="inline-flex w-full sm:w-auto sm:mx-2">
-					<a href="https://blazed.city/" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-2 text-white bg-red-600 rounded-lg hover:bg-red-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-						Blazed City
-					</a>
-				</div>
-
-				<div class="inline-flex w-full mt-4 sm:w-auto sm:mx-2 sm:mt-0">
-					<a href="https://blazed.world/" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-2 text-gray-700 transition-colors duration-150 transform bg-white border border-gray-200 rounded-lg hover:bg-gray-100 sm:w-auto focus:ring focus:ring-gray-200 focus:ring-opacity-80">
-						Blazed World
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<app-newsletter-hero></app-newsletter-hero>
 </article>

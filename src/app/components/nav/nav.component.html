@@ -1,29 +1,8 @@
 <ul class="space-y-6 pb-6 tracking-wide font-medium text-red-800 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
-    <li>
-        <a routerLink="/home" routerLinkActive="is-active" class="block md:px-3">
+    <li *ngFor="let item of menu">
+        <a [routerLink]="item.url" routerLinkActive="is-active" class="block md:px-3">
             <span>
-                Home
-            </span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/about" routerLinkActive="is-active" class="block md:px-3">
-            <span>
-                About
-            </span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/directory" routerLinkActive="is-active" class="block md:px-3">
-            <span>
-                Directory
-            </span>
-        </a>
-    </li>
-    <li>
-        <a routerLink="/divisions" routerLinkActive="is-active" class="block md:px-3">
-            <span>
-                Divisions
+                {{ item.text }}
             </span>
         </a>
     </li>

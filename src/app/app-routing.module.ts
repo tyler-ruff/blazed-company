@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
 import { DivisionsComponent } from './pages/divisions/divisions.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { SuccessComponent } from './pages/success/success.component';
 import { UnknownComponent } from './pages/unknown/unknown.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'directory', component: DirectoryComponent },
   { path: 'divisions', component: DivisionsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'newsletter', component: NewsletterComponent },
   { path: 'success', component: SuccessComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: UnknownComponent },
