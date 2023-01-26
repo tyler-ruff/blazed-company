@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Hind+Vadodara&display=swap');
+
 /* Import TailwindCSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Hind+Vadodara&display=swap');
 
 /* Blazed Labs Styles */
 
@@ -87,6 +87,7 @@ body::-webkit-scrollbar-thumb:hover{
 body {
     font-family: 'Hind Vadodara', sans-serif;
     letter-spacing: 0.7px;
+    overflow: hidden;
 }
 
 h1, h3{

@@ -1,4 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { AppService } from 'src/app/shared/app.service';
+
+import { page } from './contact.page';
 
 @Component({
   selector: 'app-contact',
@@ -6,16 +9,20 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+
+  public page = page;
+
   selectedPurpose = '';
 
   showContact = true;
   showSales = false;
   showSupport = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private appService: AppService) {
+    appService.setPage(page);
   }
+
+  ngOnInit(): void { }
 
   public selectBox(values: any): void{
     this.selectedPurpose = values.currentTarget.value;

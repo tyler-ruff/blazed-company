@@ -5,37 +5,53 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+
+// Services
+import { AppService } from './shared/app.service';
+
+// Pages
 import { HomeComponent } from './pages/home/home.component';
-import { HeroComponent } from './components/hero/hero.component';
-import { FeaturesComponent } from './components/features/features.component';
-import { ContactCtaComponent } from './components/contact-cta/contact-cta.component';
-import { LazyLoadDirective } from './lazyload.directive';
-import { NavComponent } from './components/nav/nav.component';
 import { AboutComponent } from './pages/about/about.component';
 import { DivisionsComponent } from './pages/divisions/divisions.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
+import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SuccessComponent } from './pages/success/success.component';
+import { UnknownComponent } from './pages/unknown/unknown.component';
+
+// Components
+import { LayoutComponent } from './components/layout/layout.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavComponent } from './components/nav/nav.component';
+
+// Widgets
+import { HeroComponent } from './widgets/hero/hero.component';
+import { FeaturesComponent } from './widgets/features/features.component';
+import { ContactCtaComponent } from './widgets/contact-cta/contact-cta.component';
+import { DiscoverComponent } from './widgets/discover/discover.component';
+import { RuffSealComponent } from './widgets/ruff-seal/ruff-seal.component';
+import { AboutCardComponent } from './widgets/about-card/about-card.component';
+import { NewsletterHeroComponent } from './widgets/newsletter-hero/newsletter-hero.component';
+
+// Utilities
+import { LazyLoadDirective } from './utils/lazyload.directive';
+import { PhoneFormatPipe } from './utils/format-phone.pipe';
+import { RelativeTimePipe } from './utils/relative-time.pipe';
+
+import { CommonModule } from '@angular/common';
+
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
-import { CommonModule } from '@angular/common';
-import { NewsletterComponent } from './pages/newsletter/newsletter.component';
-import { NewsletterHeroComponent } from './components/newsletter-hero/newsletter-hero.component';
-import { DiscoverComponent } from './components/discover/discover.component';
-import { RuffSealComponent } from './components/ruff-seal/ruff-seal.component';
-import { AboutCardComponent } from './components/about-card/about-card.component';
-import { UnknownComponent } from './pages/unknown/unknown.component';
-import { PhoneFormatPipe } from './utils/format-phone-pipe/format-phone.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LayoutComponent,
     LazyLoadDirective,
     HeaderComponent,
     FooterComponent,
@@ -55,7 +71,8 @@ import { PhoneFormatPipe } from './utils/format-phone-pipe/format-phone.pipe';
     RuffSealComponent,
     AboutCardComponent,
     UnknownComponent,
-    PhoneFormatPipe
+    PhoneFormatPipe,
+    RelativeTimePipe
   ],
   imports: [
     BrowserModule,
@@ -73,7 +90,9 @@ import { PhoneFormatPipe } from './utils/format-phone-pipe/format-phone.pipe';
     provideFunctions(() => getFunctions()),
     provideStorage(() => getStorage())
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

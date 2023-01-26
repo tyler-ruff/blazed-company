@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/shared/app.service';
+
+import { page } from './newsletter.page';
 
 @Component({
   selector: 'app-newsletter',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsletterComponent implements OnInit {
 
-  constructor() { }
+  public page = page;
+
+  constructor(private appService: AppService) {
+    appService.setPage(page);
+  }
+
 
   ngOnInit(): void {
   }

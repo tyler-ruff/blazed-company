@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Config } from '../../../data/config';
+import { Config } from 'fire-ng/lib/interfaces/config';
+import { AppService } from 'src/app/shared/app.service';
 
 @Component({
   selector: 'app-about-card',
@@ -9,10 +9,11 @@ import { Config } from '../../../data/config';
 })
 export class AboutCardComponent implements OnInit {
 
-  email = Config.email;
-  phone = Config.telephone;
-
-  constructor() { }
+  public app: Config;
+  constructor(appService: AppService) { 
+    const config = appService.getConfig();
+    this.app = config.app;
+  }
 
   ngOnInit(): void {
   }

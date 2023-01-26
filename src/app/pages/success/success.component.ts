@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/shared/app.service';
+
+import { page } from './success.page';
 
 @Component({
   selector: 'app-success',
@@ -8,7 +11,12 @@ import { Component, OnInit } from '@angular/core';
 export class SuccessComponent implements OnInit {
 
   showBox: boolean = true;
-  constructor() { }
+  public page = page;
+
+  constructor(private appService: AppService) {
+    appService.setPage(page);
+  }
+
 
   ngOnInit(): void {
   }

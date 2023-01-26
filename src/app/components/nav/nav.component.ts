@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Config } from '../../../data/config';
+import { site } from 'src/config/site';
 
 @Component({
   selector: 'app-nav',
@@ -9,10 +9,8 @@ import { Config } from '../../../data/config';
 })
 export class NavComponent implements OnInit {
 
-  menu = Config.menu;
+  public site = site;
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
