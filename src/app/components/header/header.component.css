@@ -44,6 +44,9 @@ nav{
     .header-nav-links{
         display:none;
     }
+    .header{
+        padding-bottom: 0;
+    }
 
 }
 
