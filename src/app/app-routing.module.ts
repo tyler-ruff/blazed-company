@@ -8,8 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { SuccessComponent } from './pages/success/success.component';
 import { UnknownComponent } from './pages/unknown/unknown.component';
+import { BrandComponent } from './pages/brand/brand.component';
 
 import { PreloadAllModules } from '@angular/router';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +21,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'newsletter', component: NewsletterComponent },
   { path: 'success', component: SuccessComponent },
+  { path: 'brand', component: BrandComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: UnknownComponent },
 ];
