@@ -6,3 +6,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+  from = "/brand"
+  to = "https://blazed.sbs/books/BlazedBrandBook-1-0.pdf"
+  status = 200
