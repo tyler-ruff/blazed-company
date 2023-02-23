@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "fire"
+  "defaultProject": "fire",
+  "cli": {
+    "analytics": "1c97e98d-d200-47b3-9aa1-ead3f20f3023"
+  }
 }

@@ -11,6 +11,7 @@ import { UnknownComponent } from './pages/unknown/unknown.component';
 import { BrandComponent } from './pages/brand/brand.component';
 
 import { PreloadAllModules } from '@angular/router';
+import { HumansComponent } from './pages/humans/humans.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'newsletter', component: NewsletterComponent },
   { path: 'success', component: SuccessComponent },
   { path: 'brand', component: BrandComponent },
+  { path: 'humans', component: HumansComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: UnknownComponent },
 ];

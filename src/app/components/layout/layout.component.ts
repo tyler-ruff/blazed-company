@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Config } from 'fire-ng/lib/interfaces/config';
+
+import { DataConfig, data } from 'src/config/data';
+import { AppService } from 'src/app/shared/app.service';
 
 @Component({
   selector: 'blz-layout',
@@ -7,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  public app: Config;
+  public data: DataConfig
+
+  constructor(private appService: AppService) {
+    const config = appService.getConfig();
+    this.app = config.app;
+    this.data = data;
+   }
 
   ngOnInit(): void {
   }

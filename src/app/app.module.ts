@@ -47,6 +47,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { BrandComponent } from './pages/brand/brand.component';
+import { HumansComponent } from './pages/humans/humans.component';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { BrandComponent } from './pages/brand/brand.component';
     UnknownComponent,
     PhoneFormatPipe,
     RelativeTimePipe,
-    BrandComponent
+    BrandComponent,
+    HumansComponent
   ],
   imports: [
     BrowserModule,
