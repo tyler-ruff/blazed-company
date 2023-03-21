@@ -7,7 +7,7 @@ export interface DataConfig {
     uuid: string;
 };
 export const data = {
-    address: '3017 Tremont Ave, Egg Harbor Township, NJ 08234',
+    address: '1650 Simpson Ave, Ocean City, NJ 08226',
     taxId: '84-4261217',
     duns: '104328712',
     branchCode: 'BgoDMTcBvN2eKkhS9',
