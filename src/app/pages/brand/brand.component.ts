@@ -12,7 +12,7 @@ export class BrandComponent implements OnInit {
 
   constructor(private appService: AppService) { 
     appService.setPage(page);
-    window.location.href = 'https://blazed.sbs/books/BlazedBrandBook-1-0.pdf';  
+    window.location.href = 'https://blazed.sbs/books/BlazedBrandBook-1-1.pdf';  
   }
 
   ngOnInit(): void {
