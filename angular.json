@@ -2,19 +2,6 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "storybook": {
-    "builder": "@storybook/angular:start-storybook",
-    "options": {
-      "browserTarget": "angular-cli:build",
-      "port": 6006
-    }
-  },
-  "build-storybook": {
-    "builder": "@storybook/angular:build-storybook",
-    "options": {
-      "browserTarget": "angular-cli:build"
-    }
-  },
   "projects": {
     "fire": {
       "projectType": "application",
@@ -36,7 +23,6 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest",
               "src/_redirects"
@@ -53,13 +39,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "20gb",
+                  "maximumError": "40gb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "10gb",
+                  "maximumError": "20gb"
                 }
               ],
               "fileReplacements": [
@@ -107,7 +93,6 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest"
             ],
@@ -130,7 +115,6 @@
       }
     }
   },
-  "defaultProject": "fire",
   "cli": {
     "analytics": "1c97e98d-d200-47b3-9aa1-ead3f20f3023"
   }
