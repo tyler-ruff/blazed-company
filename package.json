@@ -23,10 +23,7 @@
     "@angular/service-worker": "^14.3.0",
     "daisyui": "^2.49.0",
     "fire-ng": "^2.0.1",
-    "google-libphonenumber": "^3.2.30",
-    "intl-tel-input": "^17.0.3",
     "libphonenumber-js": "^1.10.18",
-    "ngx-intl-tel-input": "^3.2.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
