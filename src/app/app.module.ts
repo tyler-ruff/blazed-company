@@ -16,6 +16,8 @@ import { DivisionsComponent } from './pages/divisions/divisions.component';
 import { DirectoryComponent } from './pages/directory/directory.component';
 import { NewsletterComponent } from './pages/newsletter/newsletter.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BrandComponent } from './pages/brand/brand.component';
+import { HumansComponent } from './pages/humans/humans.component';
 import { SuccessComponent } from './pages/success/success.component';
 import { UnknownComponent } from './pages/unknown/unknown.component';
 
@@ -46,9 +48,6 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { BrandComponent } from './pages/brand/brand.component';
-import { HumansComponent } from './pages/humans/humans.component';
-
 
 @NgModule({
   declarations: [
