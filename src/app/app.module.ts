@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 // Services
@@ -40,8 +41,6 @@ import { NewsletterHeroComponent } from './widgets/newsletter-hero/newsletter-he
 import { LazyLoadDirective } from './utils/lazyload.directive';
 import { PhoneFormatPipe } from './utils/format-phone.pipe';
 import { RelativeTimePipe } from './utils/relative-time.pipe';
-
-import { CommonModule } from '@angular/common';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
