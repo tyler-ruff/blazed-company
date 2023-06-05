@@ -1,8 +1,8 @@
 [build]
-  command = "ng build"
-  publish = "dist/fire"
+  publish = "exampleSite/public"
+  command = "cd exampleSite && hugo --gc --themesDir ../.."
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+  HUGO_VERSION = "0.80.0"
+  HUGO_THEME = "repo"
+  HUGO_BASEURL = "/"
