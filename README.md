@@ -91,10 +91,10 @@ git clone https://github.com/zerostaticthemes/hugo-serif-theme.git themes/hugo-s
 
 **4. Copy the example content**
 
-Copy the entire contents of the `mynewsite/themes/hugo-serif-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+Copy the entire contents of the `mynewsite/themes/hugo-serif-theme/blazedCompany/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
 
 ```
-cp -a themes/hugo-serif-theme/exampleSite/. .
+cp -a themes/hugo-serif-theme/blazedCompany/. .
 ```
 
 **6. Run Hugo**
