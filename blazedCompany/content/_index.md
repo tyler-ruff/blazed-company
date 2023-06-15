@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: true
 
 # We turn Dreams into Reality.
 
-We are dedicated to using technology to empower our customers and to help them realize their full potential. We strive to create products and services that are reliable, secure and cost-effective, allowing our customers to get more out of their technology.
+We are dedicated to using technology to empower our customers and to help them realize their full potential.
