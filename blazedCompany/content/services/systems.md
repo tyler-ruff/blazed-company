@@ -1,30 +1,34 @@
 ---
-title: "Accounting"
+title: "Systems Operations"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true
 weight: 1
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
-
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+Systems administration, dev-ops, and operations of on-site and cloud systems.
+Secure, performant, and reliable systems infrastructure managed for you. Don't settle for less, get the **best**.
 
 # Objectives 
 
-Financial accounting and financial reporting are often used as synonyms.
+Our service is here to help your business create and manage its IT infrastructure.
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+1. **Blazing Fast**: Our philosophy is, if it ain't fast: *its broken.* Therefore, we will help you bring your production release to market, fast. Once its released, we will assure it loads fast.
+2. **Customized For You**: Your deployments all have specific requirements. We will work with your business to ensure your solution has been tweaked to perfection.
+3. **Improve User Experience**: We work closely and carefully to ensure your solution also meets the needs of your end-users. Once deployed, we will test and refine your solution.
 
-## Relevance
+## Solutions
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance. 
+* **Database** - Managed cloud SQL, No-SQL, and big data databases. Relational (structured) or file-based data storage.
+* **Networking** - Managed routing, DNS, active domain, email, and more. Connect your business to the world, with our networking services.
+* **Content** - Content creation, content management (CMS), and content publishing. Deliver your message to the world, with our content services.
+* **Hosting** - Static site hosting, dynamic site hosting, and application hosting. Do business with our secure and reliable hosting services.
+* **Dev-Ops** - Git repo management, source code management, and software version management. Update and support your systems with ease.
+* **Project Management** - Management of remote teams, progress updates and tracking, and live consultation. We make it happen from beginning to end.
 
-> The ingredients of relevance are the predictive value and confirmatory value. 
+## Support
+- [Contact Us](https://blazed.systems/support)
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
 
 ## Faithful Representation
 

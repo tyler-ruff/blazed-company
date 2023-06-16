@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Services that grow with your business
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+We will constantly strive to innovate and stay ahead of the curve in the rapidly changing world of technology. We are dedicated to providing our customers with the best products and services available so that they can remain competitive and successful.
