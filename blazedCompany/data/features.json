@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
+    "title": "Global Communications",
+    "description": "Setup a highly available communications network, spanning the globe.",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Innovative Solutions",
+    "description": "We've cultivated solutions and expertise to help you leverage company assets.",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Idiomatic Management",
+    "description": "Leverage self-service management panels to empower employees of any tech background.",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]

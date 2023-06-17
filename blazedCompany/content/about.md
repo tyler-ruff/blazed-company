@@ -6,9 +6,7 @@ date: 2018-02-22T17:01:34+07:00
 ## Safe and Reliable Systems
 We, at Blazed Labs, believe that technology should be accessible, reliable and easy to use. Our mission is to provide innovative and cutting-edge solutions to our customers that make their lives easier and more productive.
 
-We are dedicated to using technology to empower our customers and to help them realize their full potential. We strive to create products and services that are reliable, secure and cost-effective, allowing our customers to get more out of their technology.
-
-We are committed to creating an environment where individuals can work and learn in a safe, secure and supportive environment. Our employees are our greatest asset and we are committed to providing them with the best working conditions and resources to ensure their success. We recognize and value the importance of diversity in the workplace and strive to create an inclusive and welcoming workplace.
+It is our commitment to creating an environment where individuals can work and learn in a safe, secure and supportive environment. Our employees are our greatest asset and we are committed to providing them with the best working conditions and resources to ensure their success. We recognize and value the importance of diversity in the workplace and strive to create an inclusive and welcoming workplace.
 
 We believe in transparency and open communication with our customers and employees. We are committed to providing timely, accurate and reliable information to our customers and employees.
 
@@ -22,8 +20,6 @@ Interested in contributing? Most of our software is open source, and we maintain
 
 > "The only limit to our realization of tomorrow will be our doubts of today."
 - **Franklin D. Roosevelt**
-
-We, the members of Blazed Labs LLC, are devoted to creating products and services that will revolutionize the way people work. We are dedicated to providing innovative solutions that meet the needs of today’s market and ensure our clients’ success.
 
 We firmly believe that technology should be used to empower individuals and businesses alike. We are committed to developing products and services that help our clients achieve their goals and maximize their potential.
 
