@@ -23,10 +23,6 @@ Interested in contributing? Most of our software is open source, and we maintain
 
 We firmly believe that technology should be used to empower individuals and businesses alike. We are committed to developing products and services that help our clients achieve their goals and maximize their potential.
 
-We are passionate about creating a culture of collaboration, creativity, and innovation. We strive to develop an open and transparent environment that promotes continuous learning and encourages risk-taking.
+At Blazed Labs, our engineers are passionate about creating a culture of collaboration, creativity, and innovation. We strive to develop an open and transparent environment that promotes continuous learning and encourages risk-taking.
 
-We are driven by a commitment to excellence and are devoted to providing the highest quality products and services. We are dedicated to the pursuit of excellence and strive to exceed our own standards.
-
-We are determined to make a positive impact on our community and are passionate about giving back. We are committed to supporting local and global initiatives that promote social and economic development.
-
-We are devoted to creating a better future and are committed to using technology to make the world a better place. We are determined to make a positive contribution to our world and to create a lasting legacy.
+Thus, we're determined to make a positive impact on our community and are passionate about giving back. We are committed to supporting local and global initiatives that promote social and economic development.
