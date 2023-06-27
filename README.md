@@ -4,7 +4,7 @@ The "living business plan" of Blazed Labs LLC, a software development and publis
 
 [Live Demo](https://blazed.company/)
 
-![Hugo Serif Theme screenshot](screenshot.png)
+![blazed.company screenshot](screenshot.png)
 
 ## Features
 
