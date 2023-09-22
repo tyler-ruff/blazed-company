@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Sales",
+        "email": "sales@blazed.space",
+        "phone": "18557882348",
+        "website": "https://blazed.space/"
+    },
+    {
+        "name": "Research & Development",
+        "email": "hello@blazed.dev",
+        "phone": "18557882348",
+        "website": "https://blazed.dev/"
+    },
+    {
+        "name": "Human Resources",
+        "email": "hr@blazed.work",
+        "phone": "18338870061",
+        "website": "https://blazed.work/"
+    },
+    {
+        "name": "Accounting",
+        "email": "hello@blazed.company",
+        "phone": "19292071810",
+        "website": "https://blazed.work/"
+    },
+    {
+        "name": "Quality Assurance",
+        "email": "support@blazed.space",
+        "phone": "19088679329",
+        "website": "https://blazed.contact/"
+    },
+    {
+        "name": "Marketing",
+        "email": "hello@beez.top",
+        "phone": "18882008103",
+        "website": "https://beez.top/"
+    }
+]
