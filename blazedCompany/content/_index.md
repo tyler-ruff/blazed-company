@@ -2,7 +2,7 @@
 title: 'Homepage'
 meta_title: 'Blazed Labs LLC'
 description: "Blazed Labs is a software and publishing company."
-intro_image: "images/illustrations/pointing.svg"
+intro_image: "images/illustrations/pointing-beaker.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
