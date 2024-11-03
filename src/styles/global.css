@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Hind+Vadodara&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,23 +14,53 @@
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	  --foreground-rgb: 255, 255, 255;
+	  --background-start-rgb: 0, 0, 0;
+	  --background-end-rgb: 0, 0, 0;
+	}
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+
+*::-webkit-scrollbar{
+	width:10px;
 }
+
+*::-webkit-scrollbar-track{
+	background:#727a8a;
+}
+
+*::-webkit-scrollbar-thumb{
+	background-color:#afb4bd;
+	border-radius:20px;
+	border:1px solid #5b626e;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+	background-color:#5b626e;
+}
+
+::selection{
+	background:#1f2937;
+	background:rgba(31, 41, 55, 0.9);
+	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+::-moz-selection{
+	background:#1f2937;
+	background:rgba(31, 41, 55, 0.8);
+	color: #fff;
+	color: rgba(255, 255, 255, 0.8);
+}
+
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Hind Vadodara', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -40,6 +72,10 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+h1, h2, h3{
+	font-family: 'DM Serif Text', serif;
+}
+
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
