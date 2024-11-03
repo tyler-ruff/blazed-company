@@ -1,0 +1,17 @@
+{
+    "name": "edge-functions",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "blazed-labs",
+    "license": "MIT",
+    "description": "",
+    "dependencies": {
+      "@netlify/functions": "^2.8.2"
+    }
+  }
+  

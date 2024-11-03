@@ -1,0 +1,8 @@
+---
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect("/404");
+---
+
+<div>
+    {slug}
+</div>

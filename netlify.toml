@@ -1,8 +1,3 @@
 [build]
-  publish = "blazedCompany/public"
-  command = "cd blazedCompany && hugo --gc --themesDir ../.."
-
-[build.environment]
-  HUGO_VERSION = "0.80.0"
-  HUGO_THEME = "repo"
-  HUGO_BASEURL = "/"
+    command = "npm run build"
+    publish = "dist"
