@@ -7,7 +7,10 @@ import Layout from "../layouts/Layout.astro";
 const auth = getAuth(app);
 if (Astro.cookies.has("__session")) {
   const sessionCookie = Astro.cookies.get("__session")?.value;
-  const decodedCookie = await auth.verifySessionCookie(sessionCookie || "");
+  if(sessionCookie === undefined){
+    return Astro.redirect("/");
+  }
+  const decodedCookie = await auth.verifySessionCookie(sessionCookie);
   if (decodedCookie) {
     return Astro.redirect("/dashboard");
   }
