@@ -1,6 +1,6 @@
 # Blazed Company
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2454b528-4ea7-401b-8b21-829c134a140a/deploy-status)](https://app.netlify.com/sites/blazed-company/deploys)
 
 ## 🚀 Project Structure
 
