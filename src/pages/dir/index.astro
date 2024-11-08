@@ -1,0 +1,40 @@
+---
+import Card from "@/components/basic/Card.astro";
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+import { directoryList } from "@/pages/dir/directoryList";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Directory"
+    }
+] as MenuItem[];
+
+---
+
+<Layout title="Company Directory" 
+        description="All our company directories can be found here."
+        breadcrumb={breadCrumb}>
+    <h1>
+        Directories
+    </h1>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+    {
+        directoryList.map((dir, index) => (
+            <Card title={dir.title} 
+                  description={dir.description} 
+                  url={dir.url} />
+        ))
+    }
+    </div>
+</Layout>
+<style>
+    h1{
+        font-size: 36pt;
+        padding: 2vi 0vi;
+    }
+</style>

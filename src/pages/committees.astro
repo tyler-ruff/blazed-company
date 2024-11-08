@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Directory",
+        path: "/dir"
+    },
+    {
+        title: "Committees"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Committees Directory" 
+        description="A company committee is a group of people within a company that is tasked with a specific role or area of focus."
+        breadcrumb={breadCrumb}>
+    <p>
+        Committees
+    </p>
+</Layout>

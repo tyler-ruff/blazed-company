@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+import Tabs from "@/components/basic/Tabs.astro";
+import { tabList } from "@/pages/investors/tabList";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Investors",
+        path: "/investors"
+    },
+    {
+        title: "Shareholders"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Investor Relations Shareholders" 
+        description="Invest in Blazed Labs today!"
+        breadcrumb={breadCrumb}>
+    <h1>
+        Shareholders
+    </h1>
+    <Tabs tabList={tabList} />
+    <p>
+        Infomation for shareholders about shareholder meetings, meeting minutes, and forms to bring a motion before the board.
+    </p>
+</Layout>
+<style>
+    h1{
+        font-size: 36pt;
+        padding: 2vi 0vi;
+    }
+    p{
+        padding: 1vi 0px;
+    }
+</style>

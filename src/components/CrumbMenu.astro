@@ -1,0 +1,46 @@
+---
+import type { MenuItem } from '@/lib/types/menu';
+
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+
+interface Props {
+    breadcrumbList?: MenuItem[];
+}
+
+const { breadcrumbList} = Astro.props;
+---
+
+{breadcrumbList && (
+    <div class="py-5 mt-5">
+        <Breadcrumb>
+            <BreadcrumbList>
+                {breadcrumbList.map((item: MenuItem, index: number) => (
+                    <>
+                    {item.path && (
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href={item.path}>
+                                {item.title}
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                    )}
+                    {!item.path && (
+                        <BreadcrumbItem>
+                            <BreadcrumbPage>
+                                {item.title}
+                            </BreadcrumbPage>
+                        </BreadcrumbItem>
+                    )}
+                    </>
+                ))}
+            </BreadcrumbList>
+        </Breadcrumb>
+    </div>
+)}

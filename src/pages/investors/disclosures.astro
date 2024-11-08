@@ -1,0 +1,35 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+import Tabs from "@/components/basic/Tabs.astro";
+import { tabList } from "@/pages/investors/tabList";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Investors",
+        path: "/investors"
+    },
+    {
+        title: "Disclosures"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Investor Relations Disclosures and Statements" 
+        description="Invest in Blazed Labs today!"
+        breadcrumb={breadCrumb}>
+    <h1>
+        Disclosures and Statements
+    </h1>
+    <Tabs tabList={tabList} />
+</Layout>
+<style>
+    h1{
+        font-size: 36pt;
+        padding: 2vi 0vi;
+    }
+</style>

@@ -1,0 +1,61 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+import { Button } from "@/components/ui/button"
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Help Center",
+        path: "/help"
+    },
+    {
+        title: "Start a New Ticket"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Help Center" 
+        description="Need support with Blazed software? Simply file a ticket with our help desk and we will assist you."
+        breadcrumb={breadCrumb}>
+    <form class="new-ticket-form max-w-sm mx-auto select-none">
+        <h1>
+            Start a New Ticket
+        </h1>
+        <div class="mb-6">
+            <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
+            <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Smith" required />
+        </div>
+        <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
+        </div>
+        <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Please describe the issue..."></textarea>
+        </div>
+        <div>
+            <Button type="submit">
+                Submit Ticket
+            </Button>
+        </div>
+    </form>
+</Layout>
+<style is:global>
+    .new-ticket-form{
+        width: 360px;
+        max-width:100%;
+        padding: 5vi 0 6vi;
+    }
+    textarea{
+        min-height:80px;
+    }
+    h1{
+        font-size:28pt;
+        text-align:center;
+        padding: 1vi 0vi
+    }
+</style>

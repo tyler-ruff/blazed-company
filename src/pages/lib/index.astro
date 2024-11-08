@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Library"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Corporate Library Home" 
+        description="All our official company documents are backed up here."
+        breadcrumb={breadCrumb}>
+    <p>
+        Corporate Library
+    </p>
+</Layout>

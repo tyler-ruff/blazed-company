@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Directory",
+        path: "/dir"
+    },
+    {
+        title: "Members"
+    }
+] as MenuItem[];
+---
+
+<Layout title="Members Directory" 
+        description="Discover the key members in our organization, from the c-suite to the shareholders, to the contributors."
+        breadcrumb={breadCrumb}>
+    <p>
+        Members Directory
+    </p>
+</Layout>
