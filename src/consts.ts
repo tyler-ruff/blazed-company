@@ -27,15 +27,15 @@ export const SITE_MENU = {
         },
         {
             title: "Support",
-            path: "/help"
+            path: "/help/"
         },
         {
             title: "Investors",
-            path: "/investors"
+            path: "/investors/"
         },
         {
             title: "Directory",
-            path: "/dir"
+            path: "/dir/"
         }
     ] as MenuItem[]
 } as NavMenu
