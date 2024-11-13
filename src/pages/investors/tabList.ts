@@ -1,18 +1,18 @@
 export const tabList = [
     {
         title: "Home",
-        path: "/investors"
+        path: "/investors/"
     },
     {
         title: "Press Releases",
-        path: "/investors/press"
+        path: "/investors/press/"
     },
     {
         title: "Disclosures",
-        path: "/investors/disclosures"
+        path: "/investors/disclosures/"
     },
     {
         title: "Shareholders",
-        path: "/investors/shareholders"
+        path: "/investors/shareholders/"
     },
 ];
