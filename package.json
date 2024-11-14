@@ -1,7 +1,7 @@
 {
   "name": "blazed-company",
   "type": "module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^3.1.9",
+    "@astrojs/netlify": "^5.5.4",
     "@astrojs/react": "^3.6.2",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
@@ -24,6 +25,7 @@
     "astro": "^4.16.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "firebase": "^11.0.1",
     "flowbite": "^2.5.2",
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",

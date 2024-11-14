@@ -3,6 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
 import Tabs from "@/components/basic/Tabs.astro";
 import { tabList } from "@/pages/investors/tabList";
+import { getCollection } from "astro:content";
+
+const pressers = (await getCollection('press'));
 
 const breadCrumb = [
     {
@@ -26,6 +29,17 @@ const breadCrumb = [
         Press Releases
     </h1>
     <Tabs tabList={tabList} />
+    <ul class="p-5">
+        {
+            pressers.map((pressReleaseItem) => (
+                <li>
+                    <a href={`/investors/press/${pressReleaseItem.slug}`}>
+                        {pressReleaseItem.data.title}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Layout>
 <style>
     h1{

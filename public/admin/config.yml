@@ -1,0 +1,17 @@
+collections:
+  - name: "pressers" # Used in routes, e.g., /admin/collections/pressers
+    label: "Press Releases" # Used in the UI
+    folder: "src/content/press" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in frontmatter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "pubDate", widget: "string" }
+      - { lablel: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+media_folder: "/public" # Location where files will be stored in the repo
+public_folder: "/" # The src attribute for uploaded media
+
+backend:
+  name: git-gateway
+  branch: main

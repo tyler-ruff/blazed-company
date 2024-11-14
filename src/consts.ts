@@ -16,7 +16,7 @@ export const SITE_SOCIAL = {
     github: {
         url: "https://github.com/blazed-labs"
     }
-}
+};
 
 export const SITE_MENU = {
     id: "blz-main-nav",
@@ -24,10 +24,6 @@ export const SITE_MENU = {
         {
             title: "Home",
             path: "/"
-        },
-        {
-            title: "Support",
-            path: "/help/"
         },
         {
             title: "Investors",
@@ -38,4 +34,4 @@ export const SITE_MENU = {
             path: "/dir/"
         }
     ] as MenuItem[]
-} as NavMenu
+} as NavMenu;

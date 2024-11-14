@@ -1,0 +1,18 @@
+---
+import PressRelease from "@/layouts/PressRelease.astro";
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+/* SSR Generation: */
+const posts = await getCollection('press');
+type Props = CollectionEntry<'press'>;
+
+const { slug } = Astro.params;
+const post = posts.find((page: any) => page.slug === slug);
+if (!post) return Astro.redirect("/404");
+const { Content } = await post.render();
+
+---
+
+<PressRelease {...post.data}>
+	<Content />
+</PressRelease>

@@ -1,0 +1,44 @@
+---
+import Layout from "./Layout.astro"
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import type { MenuItem } from "@/lib/types/menu";
+
+type Props = CollectionEntry<'press'>['data'];
+
+const { title, description, pubDate } = Astro.props;
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Investors",
+        path: "/investors/"
+    },
+    {
+        title: "Press Releases",
+        path: "/investors/press/"
+    },
+    {
+        title: "View Press Release"
+    }
+] as MenuItem[];
+---
+<Layout title={title} description={description} breadcrumb={breadCrumb}>
+	<div>
+		<article>
+			<div class="prose">
+				<div class="title">
+					<div class="date">
+						{pubDate}
+					</div>
+					<h1>{title}</h1>
+					<hr />
+				</div>
+				<slot />
+			</div>
+		</article>
+	</div>
+</Layout>
