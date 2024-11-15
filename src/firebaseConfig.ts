@@ -1,7 +1,4 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyBHqyThUQYbzwsDUXPw7HAs4YX-A21enKY",
     authDomain: "blz-one-9e383.firebaseapp.com",
     databaseURL: "https://blz-one-9e383-default-rtdb.firebaseio.com",
@@ -11,8 +8,3 @@ const firebaseConfig = {
     appId: "1:817319905653:web:9acd39557b0af0568bab3c",
     measurementId: "G-Y0Q9ZYV12F"
 };
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
-export { auth };

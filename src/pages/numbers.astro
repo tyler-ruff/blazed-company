@@ -2,6 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
 
+const telephonesQuery = await fetch(new URL("/api/telephones", Astro.url));
+const data = await telephonesQuery.json();
+
 const breadCrumb = [
     {
         title: "Home",
@@ -20,7 +23,11 @@ const breadCrumb = [
 <Layout title="Telephone Directory" 
         description="Browse our phone numbers. The telephone directory is the best way to get in contact with the right party."
         breadcrumb={breadCrumb}>
-    <p>
-        Telephone List
-    </p>
+    {
+        data.map((doc: any) => (
+            <p>
+                {doc.number}
+            </p>
+        ))
+    }
 </Layout>
