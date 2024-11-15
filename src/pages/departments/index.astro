@@ -1,6 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
+import { getCollection } from "astro:content";
+
+const departments = (await getCollection('departments'));
 
 const breadCrumb = [
     {
@@ -20,7 +23,15 @@ const breadCrumb = [
 <Layout title="Departments Directory" 
         description="Discover the departments that comprise Blazed Labs and its partners."
         breadcrumb={breadCrumb}>
-    <p>
-        Departments
-    </p>
+    <ul class="p-5">
+        {
+            departments.map((dept) => (
+                <li>
+                    <a href={`/departments/${dept.slug}`}>
+                        {dept.data.title}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Layout>

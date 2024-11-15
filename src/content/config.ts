@@ -12,4 +12,12 @@ const press = defineCollection({
 	}),
 });
 
-export const collections = { press };
+const departments = defineCollection({
+	type: 'content',
+	schema: z.object({
+		title: z.string(),
+		email: z.string(),
+	}),
+})
+
+export const collections = { press, departments };
