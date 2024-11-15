@@ -1,11 +1,11 @@
 {
   "name": "blazed-company",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && npx jampack ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },
