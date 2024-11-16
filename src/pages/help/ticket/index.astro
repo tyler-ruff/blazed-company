@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { MenuItem } from "@/lib/types/menu";
+
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button";
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Help Center",
+        path: '/help/'
+    },
+    {
+        title: "Lookup Ticket"
+    }
+] as MenuItem[];
+
+---
+<Layout title="Lookup Ticket" breadcrumb={breadCrumb}>
+    <form class="space-y-3">
+        <div class="form-field">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" type="email" />
+        </div>
+        <div class="form-field">
+            <Button type="submit">Send Code</Button>
+        </div>
+    </form>
+</Layout>
+<style>
+    .form-field{
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        max-width:100%;
+    }
+</style>
