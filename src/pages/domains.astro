@@ -2,6 +2,16 @@
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
 
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
 const domainsQuery = await fetch(new URL("/api/domains", Astro.url));
 const data = await domainsQuery.json();
 
@@ -30,13 +40,37 @@ const breadCrumb = [
 <Layout title="Domains Directory" 
         description="Browse our domain names. The domain directory is the best way to see our entire web-space."
         breadcrumb={breadCrumb}>
-    <p>
+    <Table>
+        <TableCaption>Directory of domain names.</TableCaption>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[200px]">Website Name</TableHead>
+            <TableHead className="w-[90px]">Type</TableHead>
+            <TableHead>Company</TableHead>
+            <TableHead className="text-right">URL</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
         {
             data.map((domain: Domain) => (
-                <p>
-                    {domain.name}
-                </p>
+                <TableRow>
+                    <TableCell className="font-medium">
+                        {domain.name}
+                    </TableCell>
+                    <TableCell>
+                        {domain.type}
+                    </TableCell>
+                    <TableCell>
+                        {domain.company}
+                    </TableCell>
+                    <TableCell className="text-right">
+                        <a href={domain.url} target="_blank">
+                            {domain.url}
+                        </a>
+                    </TableCell>
+                </TableRow>
             ))
         }
-    </p>
+        </TableBody>
+      </Table>
 </Layout>

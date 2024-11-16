@@ -2,6 +2,17 @@
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
 
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { formatTelephone } from "@/lib/functions";
+
 const telephonesQuery = await fetch(new URL("/api/telephones", Astro.url));
 const data = await telephonesQuery.json();
 
@@ -29,11 +40,33 @@ const breadCrumb = [
 <Layout title="Telephone Directory" 
         description="Browse our phone numbers. The telephone directory is the best way to get in contact with the right party."
         breadcrumb={breadCrumb}>
-    {
-        data.map((phone: Telephone) => (
-            <p>
-                {phone.number}
-            </p>
-        ))
-    }
+    <Table>
+        <TableCaption>Directory of telephone numbers.</TableCaption>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[240px]">Name</TableHead>
+            <TableHead>Company</TableHead>
+            <TableHead className="w-[110px] text-right">Number</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+        {
+            data.map((phone: Telephone) => (
+            <TableRow>
+                    <TableCell className="font-medium">
+                        {phone.type}
+                    </TableCell>
+                    <TableCell>
+                        {phone.company}
+                    </TableCell>
+                    <TableCell>
+                        <a href={`tel:${phone.number}`} title={`Call: ${phone.type}`}>
+                            {formatTelephone(phone.number)}
+                        </a>
+                    </TableCell>
+                </TableRow>
+            ))
+        }
+        </TableBody>
+      </Table>
 </Layout>

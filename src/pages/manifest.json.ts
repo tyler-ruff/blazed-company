@@ -42,10 +42,10 @@ const getManifest = () => {
                 density: "4.0"
             }
         ],
-        "theme-color": "#333333",
-        "background-color": "#ffffff",
+        "theme_color": "#333333",
+        "background_color": "#ffffff",
         "display": "standalone",
-        "start-url": "/",
+        "start_url": "/",
         "description": SITE_DESCRIPTION
     })
 }
