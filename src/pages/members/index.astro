@@ -1,6 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
+import { getCollection } from "astro:content";
+
+const members = (await getCollection('members'));
 
 const breadCrumb = [
     {
@@ -20,7 +23,15 @@ const breadCrumb = [
 <Layout title="Members Directory" 
         description="Discover the key members in our organization, from the c-suite to the shareholders, to the contributors."
         breadcrumb={breadCrumb}>
-    <p>
-        Members Directory
-    </p>
+    <ul>
+        {
+            members.map((member) => (
+                <li>
+                    <a href={`/members/${member.slug}`}>
+                        {member.data.fullname}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Layout>

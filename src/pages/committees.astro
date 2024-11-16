@@ -2,6 +2,14 @@
 import Layout from "@/layouts/Layout.astro";
 import type { MenuItem } from "@/lib/types/menu";
 
+interface Committee{
+    title: string;
+    url: string;
+};
+
+const committeesQuery = await fetch(new URL("/api/committees", Astro.url));
+const data = await committeesQuery.json();
+
 const breadCrumb = [
     {
         title: "Home",
@@ -21,6 +29,14 @@ const breadCrumb = [
         description="A company committee is a group of people within a company that is tasked with a specific role or area of focus."
         breadcrumb={breadCrumb}>
     <p>
-        Committees
+        {
+            data.map((committee: Committee) => (
+                <div>
+                    <a href={committee.url}>
+                        {committee.title}
+                    </a>
+                </div>
+            ))
+        }
     </p>
 </Layout>

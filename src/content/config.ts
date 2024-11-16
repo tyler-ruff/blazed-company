@@ -18,6 +18,18 @@ const departments = defineCollection({
 		title: z.string(),
 		email: z.string(),
 	}),
-})
+});
 
-export const collections = { press, departments };
+const members = defineCollection({
+	type: 'content',
+	schema: z.object({
+		fullname: z.string(),
+		github: z.string(),
+		twitter: z.string(),
+		phone: z.string(),
+		email: z.string(),
+		avatar: z.string(),
+	})
+});
+
+export const collections = { press, departments, members };

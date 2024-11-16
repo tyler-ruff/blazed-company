@@ -1,0 +1,44 @@
+---
+import Layout from "./Layout.astro"
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import type { MenuItem } from "@/lib/types/menu";
+
+type Props = CollectionEntry<'members'>['data'];
+
+const { fullname, github, twitter, phone, email, avatar } = Astro.props;
+
+const breadCrumb = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Directory",
+        path: "/dir/"
+    },
+    {
+        title: "Members",
+        path: "/members/"
+    },
+    {
+        title: "View Member"
+    }
+] as MenuItem[];
+---
+<Layout title={`View member: ${fullname}`} description={`View member: ${fullname}`} breadcrumb={breadCrumb}>
+	<div>
+		<article>
+			<div class="prose">
+				<div class="title">
+					<h1>{fullname}</h1>
+                    <p>
+                        {email}
+                    </p>
+					<hr />
+				</div>
+				<slot />
+			</div>
+		</article>
+	</div>
+</Layout>

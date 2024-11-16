@@ -5,6 +5,12 @@ import type { MenuItem } from "@/lib/types/menu";
 const telephonesQuery = await fetch(new URL("/api/telephones", Astro.url));
 const data = await telephonesQuery.json();
 
+interface Telephone{
+    company: string;
+    number: string;
+    type: string;
+};
+
 const breadCrumb = [
     {
         title: "Home",
@@ -24,9 +30,9 @@ const breadCrumb = [
         description="Browse our phone numbers. The telephone directory is the best way to get in contact with the right party."
         breadcrumb={breadCrumb}>
     {
-        data.map((doc: any) => (
+        data.map((phone: Telephone) => (
             <p>
-                {doc.number}
+                {phone.number}
             </p>
         ))
     }

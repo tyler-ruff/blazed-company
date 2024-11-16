@@ -1,0 +1,18 @@
+---
+import Member from "@/layouts/Member.astro";
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+/* SSR Generation: */
+const posts = await getCollection('members');
+type Props = CollectionEntry<'members'>;
+
+const { slug } = Astro.params;
+const post = posts.find((page: any) => page.slug === slug);
+if (!post) return Astro.redirect("/404");
+const { Content } = await post.render();
+
+---
+
+<Member {...post.data}>
+	<Content />
+</Member>

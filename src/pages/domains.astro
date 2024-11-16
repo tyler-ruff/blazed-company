@@ -5,6 +5,13 @@ import type { MenuItem } from "@/lib/types/menu";
 const domainsQuery = await fetch(new URL("/api/domains", Astro.url));
 const data = await domainsQuery.json();
 
+interface Domain{
+    name: string;
+    type: string;
+    company: string;
+    url: string;
+};
+
 const breadCrumb = [
     {
         title: "Home",
@@ -25,9 +32,9 @@ const breadCrumb = [
         breadcrumb={breadCrumb}>
     <p>
         {
-            data.map((doc: any) => (
+            data.map((domain: Domain) => (
                 <p>
-                    {doc.name}
+                    {domain.name}
                 </p>
             ))
         }
