@@ -13,7 +13,14 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const { title, description = SITE_DESCRIPTION, image = '/blog-placeholder-1.jpg' } = Astro.props;
+
+let siteSchema = JSON.stringify({
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"name": SITE_TITLE,
+	"url": "https://blazed.company"
+});
 ---
 
 <!-- Global Metadata -->
@@ -41,9 +48,9 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="msapplication-config" content="/browserconfig.xml">
-<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileColor" content="#3F3047">
 <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#3F3047">
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -84,3 +91,6 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
     selector: 'div#search',
   });
 </script>
+
+<!-- Schema -->
+<script type="application/ld+json" set:html={siteSchema}></script>

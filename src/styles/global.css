@@ -59,6 +59,24 @@
 	color: rgba(255, 255, 255, 0.8);
 }
 
+.dark ::-moz-selection{
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	color: #000;
+	color: rgba(0, 0, 0, 0.8);
+}
+  
+.dark ::selection{
+	background:#fff;
+	background: rgba(255, 255, 255, 0.8);
+	color: #000;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+html.dark, html.dark body{
+	background: #1f2937;
+}
+
 body {
 	font-family: 'Hind Vadodara', sans-serif;
 	margin: 0;
@@ -72,8 +90,34 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+
 h1, h2, h3{
 	font-family: 'DM Serif Text', serif;
+}
+
+.dark h1, .dark h2, .dark h3, 
+.dark h4, .dark h5, .dark h6 
+.dark b, .dark i, .dark code,
+.dark strong {
+  color:#fff;
+}
+
+.dark p {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.dark a{
+	color: #fff;
+}
+
+.dark a:hover{
+	color: #acacac;
+	text-decoration: none;
+}
+
+.dark blockquote{
+	color: #fff;
+	border-color: #fff;
 }
 
 main {
@@ -82,6 +126,7 @@ main {
 	margin: auto;
 	padding: 3em 1em;
 }
+
 h1,
 h2,
 h3,
@@ -168,6 +213,10 @@ hr {
 	main {
 		padding: 1em;
 	}
+}
+
+.dark table{
+	color: rgba(255,255,255,0.8);
 }
 
 .sr-only {

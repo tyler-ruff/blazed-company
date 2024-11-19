@@ -1,14 +1,14 @@
 ---
 import type { MenuItem } from '@/lib/types/menu';
 
-import { v4 as uuidv4 } from 'uuid';
+//import { v4 as uuidv4 } from 'uuid';
 
 interface Props{
     tabList: MenuItem[];
 }
 const { tabList } = Astro.props;
 let path = Astro.url.pathname;
-let uuid = uuidv4();
+//let uuid = uuidv4();
 ---
 <div class="select-none">
     <div class="sm:hidden">
@@ -23,11 +23,11 @@ let uuid = uuidv4();
             }
         </select>
     </div>
-    <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+    <ul class="tabs hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
         {
             tabList.map((tabItem, index) => (
                 <li class="w-full focus-within:z-10">
-                    <a href={tabItem.path} class={path === tabItem.path ? 'text-gray-900 bg-gray-100 inline-block w-full p-4' : '' + "inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"}>
+                    <a href={tabItem.path} class={`${path === tabItem.path ? 'active' : ''} inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700`}>
                         {tabItem.title}
                     </a>
                 </li>
@@ -35,6 +35,21 @@ let uuid = uuidv4();
         }
     </ul>
 </div>
+<style is:global>
+    .tabs a{
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .dark .tabs a{
+        color: rgba(255,255,255, 0.7);
+    }
+    .tabs .active{
+        background: #eee;
+    }
+    .dark .tabs .active, .dark .tabs .active a:hover{
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+</style>
 <script is:inline>
     var domReady = function(callback) {
         document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
